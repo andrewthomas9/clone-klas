@@ -5,6 +5,7 @@ const HomePage = () => {
   return (
     <div>
       <Logo />
+      hello
     </div>
   );
 };
