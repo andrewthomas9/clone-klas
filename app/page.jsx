@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <div>
       <Logo />
-      hello
+      <h2 className="text-purple-100 p-3 underline text-2xl bg-green-200">hello</h2>
     </div>
   );
 };
