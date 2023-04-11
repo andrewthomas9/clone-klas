@@ -47,8 +47,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head></head>
-      <body className="bg-blue-100">
+      <body className="">
         <Header />
         {children}
       </body>

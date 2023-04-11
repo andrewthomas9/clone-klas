@@ -22,3 +22,7 @@ body {
   .container {
     @apply max-w-[1300px] mx-auto py-0 px-[20px] tab:px-[40px];
   }
+
+  .gradient {
+    background: linear-gradient(1turn,#7344fc,#1b2ae6);
+  }
