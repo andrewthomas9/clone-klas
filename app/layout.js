@@ -45,6 +45,7 @@ export const metadata = {
     creator: "@klas_hq",
     images: ["/images/klas-meta.jpg"],
   },
+  category: 'technology, edtech',
 };
 
 export default function RootLayout({ children }) {
