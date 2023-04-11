@@ -27,7 +27,8 @@ module.exports = {
       },
 
       screens: {
-        'tab': "950px"
+        'tab': "950px",
+        'tab-800': "800px"
       }
     },
   },

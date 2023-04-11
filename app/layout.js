@@ -1,4 +1,5 @@
 import "./globals.css";
+import Header from "./components/Header";
 
 export const metadata = {
   title: {
@@ -12,15 +13,10 @@ export const metadata = {
     "Platform",
     "Teaching",
     "tool",
-    "Class",
     "E-learning",
     "Edtech",
     "Live",
-    "Learning",
     "Technology",
-    "Class",
-    "Klas",
-    "Class",
   ],
   description: "Free Online Teaching Tool: Live Classes, Community | Klas",
   applicationName: "Klas",
@@ -45,16 +41,17 @@ export const metadata = {
     creator: "@klas_hq",
     images: ["/images/klas-meta.jpg"],
   },
-  category: 'technology, edtech',
+  category: ["technology", "edtech"],
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
-      </head>
-      <body>{children}</body>
+      <head></head>
+      <body className="bg-blue-100">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

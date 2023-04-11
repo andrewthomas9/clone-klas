@@ -11,6 +11,13 @@ body {
     font-family: 'DM Sans', sans-serif;
 }
 
+/* base styling */
+@layer base {
+  nav ul li a{
+    @apply text-gray-100 font-medium text-sm lg:text-base active:text-blue-100 hover:text-blue-200 transition-all duration-300
+  }
+}
+
 /* utility classes */
   .container {
     @apply max-w-[1300px] mx-auto py-0 px-[20px] tab:px-[40px];
