@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* utility classes */
+  .container {
+    @apply max-w-[1300px] mx-auto py-0 px-[20px] tab:px-[40px];
+  }

@@ -24,6 +24,10 @@ module.exports = {
           300: '#FFFFFF80',
           400: '#FFFFFCC'
         }
+      },
+
+      screens: {
+        'tab': "950px"
       }
     },
   },
