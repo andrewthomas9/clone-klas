@@ -28,7 +28,8 @@ module.exports = {
 
       screens: {
         'tab': "950px",
-        'tab-800': "800px"
+        'tab-800': "800px",
+        'lg-1150': "1150px"
       }
     },
   },

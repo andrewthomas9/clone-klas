@@ -11,16 +11,14 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
-/* base styling */
-@layer base {
-  nav ul li a {
-    @apply text-gray-100 font-medium text-base lg:text-base active:text-blue-100 hover:text-blue-100 transition-all duration-300;
-  }
-}
 
 /* utility classes */
 .container {
   @apply max-w-[1300px] mx-auto py-0 px-[20px] tab:px-[40px];
+}
+
+.navlink {
+  @apply text-gray-100 font-medium text-sm lg-1150:text-base active:text-blue-100 hover:text-blue-100 transition-all duration-300;
 }
 
 .gradient {
@@ -28,9 +26,15 @@ body {
 }
 
 .header {
+  @apply top-20
+}
+
+.absolute-center {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  
-  @apply top-20
+}
+
+.isOpen {
+  @apply block
 }
