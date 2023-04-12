@@ -55,7 +55,7 @@ const Header = () => {
     <>
       <div className="header absolute-center container top-10 z-20">
         <header className="z-50">
-          <div className="py-3 px-10 bg-white rounded-[50px] border border-[#00000014] flex justify-between w-full items-center">
+          <div className="py-4 px-7 tab-800:px-10 bg-white rounded-[50px] border border-[#00000014] flex justify-between w-full items-center">
             {/* {width > 800 ? <SmallLogo /> : <Logo />} */}
             <SmallLogo />
             <nav className="max-tab-800:hidden">
