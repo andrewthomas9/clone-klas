@@ -53,7 +53,7 @@ const Header = () => {
             <ul className="flex transition-all duration-300 gap-[10px] lg:gap-[30px]">
               {NavLinks.map(({ name, url }) => (
                 <li>
-                  <Link className={``} href={url}>
+                  <Link href={url}>
                     {name}
                   </Link>
                 </li>
