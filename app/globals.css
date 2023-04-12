@@ -30,6 +30,7 @@ body {
 .header {
   position: absolute;
   left: 50%;
-  top: 15%;
   transform: translate(-50%, -50%);
+  
+  @apply top-20
 }
