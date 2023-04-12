@@ -30,17 +30,13 @@ const NavLinks = [
 ];
 
 const Header = () => {
-  const [width, setWidth] = useState(window.innerWidth);
-
-  const updateWidth = () => {
-    setWidth(window.innerWidth);
-  };
+  const [width, setWidth] = useState(0);
 
   useEffect(() => {
-    window.addEventListener("resize", updateWidth);
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
 
     return () => {
-      window.removeEventListener("resize", updateWidth);
+      window.removeEventListener("resize", () => setWidth(window.innerWidth));
     };
   }, [window.innerWidth]);
 
@@ -52,7 +48,7 @@ const Header = () => {
           <nav className="max-tab-800:hidden">
             <ul className="flex transition-all duration-300 gap-[10px] lg:gap-[30px]">
               {NavLinks.map(({ name, url }) => (
-                <li>
+                <li key={name}>
                   <Link href={url}>
                     {name}
                   </Link>
