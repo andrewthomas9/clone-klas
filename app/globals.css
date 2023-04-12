@@ -1,5 +1,5 @@
 /* google font import - DMsans */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,21 +8,28 @@
 *,
 html,
 body {
-    font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* base styling */
 @layer base {
-  nav ul li a{
-    @apply text-gray-100 font-medium text-sm lg:text-base active:text-blue-100 hover:text-blue-200 transition-all duration-300
+  nav ul li a {
+    @apply text-gray-100 font-medium text-sm lg:text-base active:text-blue-100 hover:text-blue-200 transition-all duration-300;
   }
 }
 
 /* utility classes */
-  .container {
-    @apply max-w-[1300px] mx-auto py-0 px-[20px] tab:px-[40px];
-  }
+.container {
+  @apply max-w-[1300px] mx-auto py-0 px-[20px] tab:px-[40px];
+}
 
-  .gradient {
-    background: linear-gradient(1turn,#7344fc,#1b2ae6);
-  }
+.gradient {
+  background: linear-gradient(1turn, #7344fc, #1b2ae6);
+}
+
+.header {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+}

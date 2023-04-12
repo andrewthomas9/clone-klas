@@ -27,7 +27,7 @@ const NavLinks = [
 
 const Header = () => {
   return (
-    <div className="absolute container top-10">
+    <div className="header container top-10">
       <header className="z-50">
         <div className="py-3.5 px-10 bg-white rounded-[50px] border border-[#00000014] flex justify-between shadow-md w-full items-center">
           <Logo />
@@ -56,7 +56,7 @@ const Header = () => {
               Sign up free
             </Link>
           </div>
-          <div className="tab-800:hidden">
+          <div className="tab-800:hidden cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
