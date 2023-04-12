@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Logo = () => {
+export const SmallLogo = () => {
   return (
     <a href="/">
       <svg
@@ -126,7 +126,7 @@ export const Logo = () => {
   );
 };
 
-export const SmallLogo = () => {
+export const Logo = () => {
   return (
     <a href="/">
       <svg

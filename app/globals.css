@@ -14,7 +14,7 @@ body {
 /* base styling */
 @layer base {
   nav ul li a {
-    @apply text-gray-100 font-medium text-sm lg:text-base active:text-blue-100 hover:text-blue-200 transition-all duration-300;
+    @apply text-gray-100 font-medium text-sm lg:text-base active:text-blue-100 hover:text-blue-100 transition-all duration-300;
   }
 }
 
@@ -24,7 +24,7 @@ body {
 }
 
 .gradient {
-  background: linear-gradient(1turn, #7344fc, #1b2ae6);
+  background: linear-gradient(1turn, #7344fc, #1127E3);
 }
 
 .header {

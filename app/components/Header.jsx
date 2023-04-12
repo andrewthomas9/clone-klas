@@ -1,5 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import { Logo } from "./Logo";
+import { SmallLogo } from "./Logo";
+import { useState, useEffect } from "react";
 
 const NavLinks = [
   {
@@ -26,11 +30,25 @@ const NavLinks = [
 ];
 
 const Header = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  const updateWidth = () => {
+    setWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", updateWidth);
+
+    return () => {
+      window.removeEventListener("resize", updateWidth);
+    };
+  }, [window.innerWidth]);
+
   return (
     <div className="header container top-10">
       <header className="z-50">
         <div className="py-3.5 px-10 bg-white rounded-[50px] border border-[#00000014] flex justify-between shadow-md w-full items-center">
-          <Logo />
+          {width > 800 ? <SmallLogo /> : <Logo />}
           <nav className="max-tab-800:hidden">
             <ul className="flex transition-all duration-300 gap-[10px] lg:gap-[30px]">
               {NavLinks.map(({ name, url }) => (
