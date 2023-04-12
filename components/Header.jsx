@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Logo } from "./Logo";
-import { SmallLogo } from "./Logo";
+import { Logo } from "../app/components/Logo";
+import { SmallLogo } from "../app/components/Logo";
 import { useState, useEffect } from "react";
 
 const NavLinks = [
@@ -30,13 +30,17 @@ const NavLinks = [
 ];
 
 const Header = () => {
-  const [width, setWidth] = useState(0);
+  const [width, setWidth] = useState(window.innerWidth);
+
+  const updateWidth = () => {
+    setWidth(window.innerWidth);
+  };
 
   useEffect(() => {
-    window.addEventListener("resize", () => setWidth(window.innerWidth));
+    window.addEventListener("resize", updateWidth);
 
     return () => {
-      window.removeEventListener("resize", () => setWidth(window.innerWidth));
+      window.removeEventListener("resize", updateWidth);
     };
   }, [window.innerWidth]);
 
