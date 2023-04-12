@@ -2,7 +2,9 @@ import React from 'react'
 
 const CaseStudiesPage = () => {
   return (
-    <div>CaseStudiesPage</div>
+    <main className='container'>
+      <div className="pt-60">CaseStudiesPage</div>
+    </main>
   )
 }
 

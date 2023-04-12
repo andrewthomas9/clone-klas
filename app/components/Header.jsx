@@ -47,7 +47,7 @@ const Header = () => {
   return (
     <div className="header container top-10">
       <header className="z-50">
-        <div className="py-3.5 px-10 bg-white rounded-[50px] border border-[#00000014] flex justify-between shadow-md w-full items-center">
+        <div className="py-3 px-10 bg-white rounded-[50px] border border-[#00000014] flex justify-between shadow-md w-full items-center">
           {/* {width > 800 ? <SmallLogo /> : <Logo />} */}
           <Logo />
           <nav className="max-tab-800:hidden">

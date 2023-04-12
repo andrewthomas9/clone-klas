@@ -2,7 +2,9 @@ import React from 'react'
 
 const CompanyPage = () => {
   return (
-    <div>CompanyPage</div>
+    <main className='container'>
+      <div className="pt-60">CompanyPage</div>
+    </main>
   )
 }
 

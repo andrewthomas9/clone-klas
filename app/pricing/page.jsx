@@ -2,9 +2,9 @@ import React from "react";
 
 const PricingPage = () => {
   return (
-    <div>
-      PricingPage
-    </div>
+    <main className="container">
+      <div className="pt-60">PricingPage</div>
+    </main>
   );
 };
 

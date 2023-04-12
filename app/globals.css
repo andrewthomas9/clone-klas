@@ -14,7 +14,7 @@ body {
 /* base styling */
 @layer base {
   nav ul li a {
-    @apply text-gray-100 font-medium text-sm lg:text-base active:text-blue-100 hover:text-blue-100 transition-all duration-300;
+    @apply text-gray-100 font-medium text-base lg:text-base active:text-blue-100 hover:text-blue-100 transition-all duration-300;
   }
 }
 
