@@ -21,6 +21,10 @@ body {
   @apply text-gray-100 font-medium text-sm lg-1150:text-base active:text-blue-100 hover:text-blue-100 transition-all duration-300;
 }
 
+.footer_navlink {
+  @apply text-sm transition-all duration-300 text-white font-normal hover:text-[hsla(0,0%,100%,.5)]
+}
+
 .gradient {
   background: linear-gradient(1turn, #7344fc, #1127E3);
 }

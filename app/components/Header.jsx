@@ -23,7 +23,6 @@ const NavLinks = [
     url: "/case-studies",
   },
   {
-    id: 1,
     name: "Products",
     url: "/products",
   },

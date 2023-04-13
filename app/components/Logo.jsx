@@ -251,3 +251,118 @@ export const SmallLogo = () => {
     </a>
   );
 };
+
+export const FooterLogo = () => {
+  return (
+    <a href="/">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="85"
+        height="36"
+        fill="none"
+      >
+        <path
+          fill="#fff"
+          d="M43.426 26.277V12.938h2.44v5.393l4.935-5.393h3.01l-4.916 5.298 5.05 8.041h-2.992l-3.81-6.174-1.278 1.391v4.783h-2.439Zm12.132 0v-13.72h2.439v13.72h-2.44Zm8.19.229c-.813 0-1.48-.127-2.001-.381-.52-.267-.908-.616-1.162-1.048a2.767 2.767 0 0 1-.382-1.43c0-.876.343-1.587 1.03-2.133.686-.547 1.715-.82 3.087-.82h2.4v-.229c0-.648-.184-1.124-.552-1.429-.369-.305-.826-.457-1.372-.457-.496 0-.928.12-1.296.362-.368.229-.597.572-.686 1.029h-2.382a3.365 3.365 0 0 1 .686-1.791 3.891 3.891 0 0 1 1.563-1.163c.635-.28 1.346-.419 2.134-.419 1.347 0 2.407.337 3.182 1.01.775.673 1.163 1.626 1.163 2.858v5.812h-2.078l-.228-1.524c-.28.508-.673.927-1.182 1.258-.495.33-1.137.495-1.924.495Zm.552-1.905c.7 0 1.239-.23 1.62-.686.394-.458.642-1.023.743-1.697h-2.077c-.648 0-1.111.121-1.39.363-.28.228-.42.514-.42.857 0 .369.14.654.42.858.279.203.647.305 1.104.305Zm11.094 1.905c-.839 0-1.576-.133-2.21-.4-.636-.28-1.144-.66-1.525-1.144a3.282 3.282 0 0 1-.686-1.676h2.458c.076.368.28.686.61.952.343.255.78.381 1.315.381.533 0 .92-.107 1.162-.323.254-.216.381-.464.381-.744 0-.406-.178-.68-.534-.819-.355-.152-.85-.299-1.486-.438-.407-.09-.82-.197-1.239-.324a6.353 6.353 0 0 1-1.162-.477 2.694 2.694 0 0 1-.838-.762c-.216-.317-.324-.705-.324-1.162 0-.839.33-1.544.99-2.115.674-.572 1.614-.858 2.82-.858 1.119 0 2.008.26 2.669.781.673.521 1.073 1.239 1.2 2.154H76.69c-.14-.699-.667-1.048-1.581-1.048-.458 0-.813.088-1.067.266-.242.178-.362.4-.362.667 0 .28.184.502.552.667.369.165.858.318 1.468.458.66.152 1.264.324 1.81.514.559.178 1.003.451 1.334.82.33.355.495.87.495 1.543a2.654 2.654 0 0 1-.457 1.582c-.318.47-.775.838-1.372 1.105-.597.267-1.302.4-2.115.4Z"
+        ></path>
+        <g filter="url(#footer-logo_svg__a)">
+          <ellipse
+            cx="16.467"
+            cy="20.719"
+            fill="#fff"
+            rx="15.467"
+            ry="13.527"
+          ></ellipse>
+        </g>
+        <g filter="url(#footer-logo_svg__b)">
+          <ellipse
+            cx="16.467"
+            cy="16.52"
+            fill="#6C6C6C"
+            rx="15.467"
+            ry="14.927"
+          ></ellipse>
+        </g>
+        <ellipse
+          cx="16.467"
+          cy="16.054"
+          fill="#F7F7F7"
+          rx="15.467"
+          ry="14.46"
+        ></ellipse>
+        <ellipse
+          cx="16.468"
+          cy="15.589"
+          fill="#1127E3"
+          rx="12.655"
+          ry="12.128"
+        ></ellipse>
+        <ellipse
+          cx="11.312"
+          cy="15.588"
+          fill="#fff"
+          rx="2.812"
+          ry="2.799"
+        ></ellipse>
+        <ellipse
+          cx="21.625"
+          cy="15.588"
+          fill="#fff"
+          rx="2.812"
+          ry="2.799"
+        ></ellipse>
+        <defs>
+          <filter
+            id="footer-logo_svg__a"
+            width="32.422"
+            height="28.543"
+            x="0.256"
+            y="7.191"
+            color-interpolation-filters="sRGB"
+            filterUnits="userSpaceOnUse"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feColorMatrix
+              in="SourceAlpha"
+              result="hardAlpha"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            ></feColorMatrix>
+            <feOffset dy="0.744"></feOffset>
+            <feGaussianBlur stdDeviation="0.372"></feGaussianBlur>
+            <feComposite in2="hardAlpha" operator="out"></feComposite>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+            <feBlend
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow_10671_11664"
+            ></feBlend>
+            <feBlend
+              in="SourceGraphic"
+              in2="effect1_dropShadow_10671_11664"
+              result="shape"
+            ></feBlend>
+          </filter>
+          <filter
+            id="footer-logo_svg__b"
+            width="32.847"
+            height="31.769"
+            x="0.043"
+            y="0.637"
+            color-interpolation-filters="sRGB"
+            filterUnits="userSpaceOnUse"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            ></feBlend>
+            <feGaussianBlur
+              result="effect1_foregroundBlur_10671_11664"
+              stdDeviation="0.478"
+            ></feGaussianBlur>
+          </filter>
+        </defs>
+      </svg>
+    </a>
+  );
+};
