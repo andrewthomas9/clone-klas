@@ -4,19 +4,23 @@
 
 Klas is a platform for anyone to start and grow an online academy. Klas powers 1900+ online academies and 100k+ students globally.
 
+
 ## License 📄
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
+
 ## Please note ⚠
 
 This project is just a clone of the original [Klas](https://tryklas.com) and is only meant for learning and building purposes.
+
 
 ## Tech Stack used for this project 🦾
 
 - **Next.js 13.3**
 - **Tailwind Css**
 - **Framer Motion**
+
 
 ## 🔗 Check out the project here - [Klas](https://klas-clone.vercel.app)
 
