@@ -47,7 +47,13 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openNav = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(true);
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeNav = () => {
+    setIsOpen(false);
+    document.body.style.overflow = "auto";
   };
 
   return (
@@ -82,9 +88,10 @@ const Header = () => {
                 Sign up free
               </Link>
             </div>
-            <div onClick={openNav} className="tab-800:hidden cursor-pointer">
+            <div className="tab-800:hidden cursor-pointer">
               {!isOpen ? (
                 <svg
+                  onClick={openNav}
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
                   height="32"
@@ -100,6 +107,7 @@ const Header = () => {
                 </svg>
               ) : (
                 <svg
+                  onClick={closeNav}
                   xmlns="http://www.w3.org/2000/svg"
                   width="35"
                   height="35"
@@ -117,7 +125,7 @@ const Header = () => {
       </div>
 
       {isOpen ? (
-        <nav className="h-full tab-800:hidden absolute bg-white w-full">
+        <nav className="h-full tab-800:hidden absolute z-10 bg-white w-full">
           <ul className="flex-col text-center absolute-center mt-[150px] space-y-7 items-center justify-center top-60 transition-all duration-300 ">
             {NavLinks.map(({ name, url }) => (
               <li onClick={() => setIsOpen(false)} className="" key={name}>
@@ -130,10 +138,7 @@ const Header = () => {
               </li>
             ))}
             <div className=" flex flex-col gap-[20px] transition-all duration-300 lg:gap-8 items-center">
-              <Link
-                className="text-lg text-blue-100 font-medium"
-                href="/login"
-              >
+              <Link className="text-lg text-blue-100 font-medium" href="/login">
                 Login
               </Link>
               <Link

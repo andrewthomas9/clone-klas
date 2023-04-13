@@ -9,6 +9,7 @@
 html,
 body {
   font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 
@@ -41,4 +42,8 @@ body {
 
 .isOpen {
   @apply block
+}
+
+.disable-scroll {
+  overflow: hidden;
 }
