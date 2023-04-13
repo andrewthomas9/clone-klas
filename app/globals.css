@@ -40,6 +40,10 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.fixed_center {
+  position: fixed;
+}
+
 .isOpen {
   @apply block
 }

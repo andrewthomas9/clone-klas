@@ -45,17 +45,6 @@ const Header = () => {
 
   // mobile navigation
   const [isOpen, setIsOpen] = useState(false);
-  // document.body.style.overflow = "visible"
-
-  const openNav = () => {
-    setIsOpen(true);
-    document.body.style.overflow = "hidden";
-  };
-
-  const closeNav = () => {
-    setIsOpen(false);
-    document.body.style.removeProperty("overflow")
-  };
 
   return (
     <>
@@ -89,10 +78,9 @@ const Header = () => {
                 Sign up free
               </Link>
             </div>
-            <div className="tab-800:hidden cursor-pointer">
+            <div onClick={() => setIsOpen(!isOpen)} className="tab-800:hidden cursor-pointer">
               {!isOpen ? (
                 <svg
-                  onClick={openNav}
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
                   height="32"
@@ -108,7 +96,6 @@ const Header = () => {
                 </svg>
               ) : (
                 <svg
-                  onClick={closeNav}
                   xmlns="http://www.w3.org/2000/svg"
                   width="35"
                   height="35"
@@ -126,7 +113,7 @@ const Header = () => {
       </div>
 
       {isOpen ? (
-        <nav className="h-full tab-800:hidden absolute z-10 bg-white w-full">
+        <nav className="h-screen tab-800:hidden fixed_center z-10 bg-white w-full">
           <ul className="flex-col text-center absolute-center mt-[150px] space-y-7 items-center justify-center top-60 transition-all duration-300 ">
             {NavLinks.map(({ name, url }) => (
               <li onClick={() => setIsOpen(false)} className="" key={name}>
