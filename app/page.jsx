@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
+import CountUp from "react-countup";
 
 const images = [
   {
@@ -41,7 +42,7 @@ const HomePage = () => {
             <div className="grid tab:grid-cols-2 mb-[120px] items-start gap-[80px] tab:gap-[10px] max-md:pt-[190px] pt-[210px] pb-[120px] tab:pb-[35px]">
               <div>
                 <motion.h1
-                  transition={{ duration: 0.3 }}
+                  transition={{ duration: 0.5 }}
                   initial={{ y: 50 }}
                   animate={{ y: 0 }}
                   className="font-bold max-md:text-[42px] max-md:leading-[48px] max-md:mb-4 mb-10 leading-[68px] text-[64px] text-white"
@@ -49,7 +50,7 @@ const HomePage = () => {
                   Anyone, anywhere can teach live
                 </motion.h1>
                 <motion.p
-                  transition={{ duration: 0.5 }}
+                  transition={{ duration: 0.7 }}
                   initial={{ y: 50 }}
                   animate={{ y: 0 }}
                   className="text-2xl max-md:text-[18px] max-md:leading-[28px] mb-[40px] leading-8 text-[hsla(0,0%,100%,.8)]"
@@ -58,7 +59,7 @@ const HomePage = () => {
                   Klas.
                 </motion.p>
                 <motion.div
-                  transition={{ duration: 0.7 }}
+                  transition={{ duration: 0.9 }}
                   initial={{ y: 50 }}
                   animate={{ y: 0 }}
                   className="flex items-center gap-6"
@@ -89,7 +90,7 @@ const HomePage = () => {
                 </motion.div>
               </div>
               <motion.div
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.7 }}
                 initial={{ x: 50 }}
                 animate={{ x: 0 }}
                 className="flex justify-center"
@@ -105,17 +106,17 @@ const HomePage = () => {
               <div className="flex text-left max-md:items-center max-md:justify-center max-md:text-center flex-wrap justify-between max-w-[1030px] mx-auto mb-[80px]">
                 <div className="flex flex-col h-[100px] pl-[20px] justify-center relative">
                   <span className="absolute max-md:hidden h-full top-0 left-0 span_gradient w-[2px]"></span>
-                  <h3 className="text-[32px] leading-[42px] max-md:text-2xl mb-[11px] font-bold">85,000+</h3>
+                  <h3 className="text-[32px] leading-[42px] max-md:text-2xl mb-[11px] font-bold"><CountUp end={85000} duration={2} enableScrollSpy={true} />+</h3>
                   <p className="text-[20px] leading-[26px] text-[rgba(0,0,0,.8)] max-md:text-base">Students globally</p>
                 </div>
                 <div className="flex flex-col h-[100px] pl-[20px] justify-center relative">
                   <span className="absolute max-md:hidden h-full top-0 left-0 span_gradient w-[2px]"></span>
-                  <h3 className="text-[32px] leading-[42px] max-md:text-2xl mb-[11px] font-bold">1,200+</h3>
+                  <h3 className="text-[32px] leading-[42px] max-md:text-2xl mb-[11px] font-bold"><CountUp end={1200} duration={2} enableScrollSpy={true} />+</h3>
                   <p className="text-[20px] leading-[26px] text-[rgba(0,0,0,.8)] max-md:text-base">Virtual academies</p>
                 </div>
                 <div className="flex flex-col h-[100px] pl-[20px] justify-center relative">
                   <span className="absolute max-md:hidden h-full top-0 left-0 span_gradient w-[2px]"></span>
-                  <h3 className="text-[32px] leading-[42px] max-md:text-2xl mb-[11px] font-bold">27</h3>
+                  <h3 className="text-[32px] leading-[42px] max-md:text-2xl mb-[11px] font-bold"><CountUp end={27} duration={2} enableScrollSpy={true} /></h3>
                   <p className="text-[20px] leading-[26px] text-[rgba(0,0,0,.8)] max-md:text-base">Countries reached</p>
                 </div>
               </div>
