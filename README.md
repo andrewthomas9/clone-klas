@@ -10,7 +10,7 @@ Klas is a platform for anyone to start and grow an online academy. Klas powers 1
 
 ## Please note ⚠
 
-This project is just a clone of the original [Klas](tryklas.com) and is only meant for learning and building purposes.
+This project is just a clone of the original [Klas](https://tryklas.com) and is only meant for learning and building purposes.
 
 ## Tech Stack used for this project 🦾
 
@@ -18,7 +18,7 @@ This project is just a clone of the original [Klas](tryklas.com) and is only mea
 - **Tailwind Css**
 - **Framer Motion**
 
-## 🔗 Check out the project here - [Klas](klas-clone.vercel.app)
+## 🔗 Check out the project here - [Klas](https://klas-clone.vercel.app)
 
 - This readme would be updated as the project progresses.
 
