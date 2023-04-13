@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-// import { Logo } from "./Logo";
-import { SmallLogo } from "./Logo";
+import { Logo } from "./Logo";
+// import { SmallLogo } from "./Logo";
 import { useState } from "react";
 
 const NavLinks = [
@@ -50,9 +50,9 @@ const Header = () => {
     <>
       <div className="header absolute-center container top-10 z-20">
         <header className="z-50">
-          <div className="py-4 px-7 tab-800:px-10 bg-white rounded-[50px] border border-[#00000014] flex justify-between w-full items-center">
+          <div className="py-3 px-7 tab-800:px-10 bg-white rounded-[50px] border border-[#00000014] flex justify-between w-full items-center">
             {/* {width > 800 ? <SmallLogo /> : <Logo />} */}
-            <SmallLogo />
+            <Logo />
             <nav className="max-tab-800:hidden">
               <ul className="flex transition-all duration-300 gap-[10px] lg-1150:gap-[30px]">
                 {NavLinks.map(({ name, url }) => (
