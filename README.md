@@ -14,11 +14,11 @@ This project is just a clone of the original [Klas](tryklas.com) and is only mea
 
 ## Tech Stack used for this project 🦾
 
-**Next.js 13.3**
-**Tailwind Css**
-**Framer Motion**
+- **Next.js 13.3**
+- **Tailwind Css**
+- **Framer Motion**
 
-# 🔗 Check out the project here - [Klas](klas-clone.vercel.app)
+## 🔗 Check out the project here - [Klas](klas-clone.vercel.app)
 
 - This readme would be updated as the project progresses.
 
