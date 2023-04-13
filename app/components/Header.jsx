@@ -45,7 +45,7 @@ const Header = () => {
 
   // mobile navigation
   const [isOpen, setIsOpen] = useState(false);
-  document.body.style.overflow = "visible"
+  // document.body.style.overflow = "visible"
 
   const openNav = () => {
     setIsOpen(true);
