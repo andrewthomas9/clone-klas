@@ -30,6 +30,10 @@ body {
   background: linear-gradient(1turn, #7344fc, #1127E3);
 }
 
+.span_gradient {
+  background: linear-gradient(180deg, #1127E3, #7344fc);
+}
+
 .header {
   @apply top-20
 }
