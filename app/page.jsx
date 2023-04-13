@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 const HomePage = () => {
   return (
@@ -39,11 +40,12 @@ const HomePage = () => {
                   </Link>
                 </div>
               </div>
-              <div>
-                <img
+              <div className="flex justify-center">
+                {/* <img
                   src="/images/hero.png"
                   alt="hero"
-                />
+                /> */}
+                <Image src="/images/hero.png" width={640} height={640} />
               </div>
             </div>
           </div>
