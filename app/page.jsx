@@ -123,28 +123,28 @@ const HomePage = () => {
                 Teach anything online with Klas
               </h1>
               <div className="grid">
-                <div className="overflow-hidden">
+                <div className="overflow-hidden 2xl:w-[2000px] 2xl:mx-auto">
                   <Marquee pauseOnHover speed={45} className="flex gap-6" gradient={false}>
-                    <span className="grid grid-cols-6 gap-6 ">
+                    <span className="grid grid-cols-4 tab-800:grid-cols-6 gap-4 tab-800:gap-6 mr-3 ">
                       {marqueeData.map(({ text, url }) => (
                         <div
                           className="relative grid place-items-center"
                           key={text}
                         >
-                          <img className="w-[311px] h-[292px]" src={url} alt={text} />
+                          <img className="w-[192px] h-[181px] tab-800:w-[311px] tab-800:h-[292px]" src={url} alt={text} />
                           <h3 className="relative text-white text-base bottom-[30px] font-bold text-center">
                             {text}
                           </h3>
                         </div>
                       ))}
                     </span>
-                    <span className="grid gap-6 grid-cols-6">
+                    <span className="grid tab-800:gap-6 gap-4 grid-cols-4 tab-800:grid-cols-6 ml-3">
                       {marqueeData.map(({ text, url }) => (
                         <div
                           className="relative grid place-items-center"
                           key={text}
                         >
-                          <img className="w-[311px] h-[292px]" src={url} alt={text} />
+                          <img className="w-[192px] h-[181px] tab-800:w-[311px] tab-800:h-[292px]" src={url} alt={text} />
                           <h3 className="relative text-white text-base bottom-[30px] font-bold text-center">
                             {text}
                           </h3>
