@@ -98,3 +98,25 @@ export const images = [
         url: "images/marketing.png"
     },
   ]
+
+  export const Features_one = [
+    {
+        name: "experience",
+        text: {
+            heading: "Host a fun and interactive experience",
+            list: ["Engage in new ways with polls, emojis, Q+A", "One-click recordings & cloud storage", "Host up to 5,000 learners per class"]
+        },
+        img: "images/tools.png",
+        color: "#1127e3",
+        reverse: true
+    },
+    {
+        name: "monetize",
+        text: {
+            heading: "Monetize your classes",
+            list: ["Instant booking with Klas pay", "Fast payouts in different currencies", "Unlimited transactions, 1.5% enrolment fee"]
+        },
+        img: "images/payment.png",
+        color: "#1127e3",
+    },
+  ]

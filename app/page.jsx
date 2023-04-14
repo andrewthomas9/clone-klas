@@ -8,6 +8,9 @@ import CountUp from "react-countup";
 import { images } from "@/data/Data";
 import { marqueeData } from "@/data/Data";
 import Marquee from "react-fast-marquee";
+import { Features_one } from '@/data/Data'
+import Feature from "./components/Feature";
+
 
 const HomePage = () => {
   return (
@@ -76,6 +79,7 @@ const HomePage = () => {
             </div>
           </div>
         </section>
+
         <section>
           <div className="container">
             <div className="mb-[160px]">
@@ -116,6 +120,7 @@ const HomePage = () => {
             </div>
           </div>
         </section>
+
         <section>
           <div className="mb-[160px]">
             <div className="flex flex-col gap-[80px]">
@@ -154,6 +159,23 @@ const HomePage = () => {
                   </Marquee>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="pb-[160px]">
+            <div className="pb-[120px]">
+              <div className="flex items-center justify-center">
+                <h1 className="text-[32px] leading-[42px] font-bold text-center md:text-5xl md:leading-[62px]">One platform to power your live classes</h1>
+              </div>
+            </div>
+            <div className="container">
+                {
+                  Features_one.map(featureData => (
+                    <Feature key={featureData.name} data={featureData} />
+                  ))
+                }
             </div>
           </div>
         </section>
