@@ -8,9 +8,11 @@ import CountUp from "react-countup";
 import { images } from "@/data/Data";
 import { marqueeData } from "@/data/Data";
 import Marquee from "react-fast-marquee";
-import { Features_one } from '@/data/Data'
+import { Features_one, Features_two, Features_three } from "@/data/Data";
 import Feature from "./components/Feature";
-
+import { FeatureCard } from "./components/Feature";
+import { FeaturesCard } from "@/data/Data";
+import { BeforeData } from "@/data/Data";
 
 const HomePage = () => {
   return (
@@ -129,14 +131,23 @@ const HomePage = () => {
               </h1>
               <div className="grid">
                 <div className="overflow-hidden 2xl:w-[2000px] 2xl:mx-auto">
-                  <Marquee pauseOnHover speed={45} className="flex gap-6" gradient={false}>
+                  <Marquee
+                    pauseOnHover
+                    speed={45}
+                    className="flex gap-6"
+                    gradient={false}
+                  >
                     <span className="grid grid-cols-4 tab-800:grid-cols-6 gap-4 tab-800:gap-6 mr-3 ">
                       {marqueeData.map(({ text, url }) => (
                         <div
                           className="relative grid place-items-center"
                           key={text}
                         >
-                          <img className="w-[192px] h-[181px] tab-800:w-[311px] tab-800:h-[292px]" src={url} alt={text} />
+                          <img
+                            className="w-[192px] h-[181px] tab-800:w-[311px] tab-800:h-[292px]"
+                            src={url}
+                            alt={text}
+                          />
                           <h3 className="relative text-white text-base bottom-[30px] font-bold text-center">
                             {text}
                           </h3>
@@ -149,7 +160,11 @@ const HomePage = () => {
                           className="relative grid place-items-center"
                           key={text}
                         >
-                          <img className="w-[192px] h-[181px] tab-800:w-[311px] tab-800:h-[292px]" src={url} alt={text} />
+                          <img
+                            className="w-[192px] h-[181px] tab-800:w-[311px] tab-800:h-[292px]"
+                            src={url}
+                            alt={text}
+                          />
                           <h3 className="relative text-white text-base bottom-[30px] font-bold text-center">
                             {text}
                           </h3>
@@ -164,18 +179,79 @@ const HomePage = () => {
         </section>
 
         <section>
-          <div className="pb-[160px]">
+          <div className="">
             <div className="pb-[120px]">
               <div className="flex items-center justify-center">
-                <h1 className="text-[32px] leading-[42px] font-bold text-center md:text-5xl md:leading-[62px]">One platform to power your live classes</h1>
+                <h1 className="text-[32px] leading-[42px] font-bold text-center md:text-5xl md:leading-[62px]">
+                  One platform to power your live classes
+                </h1>
               </div>
             </div>
             <div className="container">
-                {
-                  Features_one.map(featureData => (
-                    <Feature key={featureData.name} data={featureData} />
-                  ))
-                }
+              {Features_one.map((featureData) => (
+                <Feature key={featureData.name} data={featureData} />
+              ))}
+            </div>
+          </div>
+
+          <div className="gradient pt-[160px] mb-[160px] pb-[10px]">
+            <div className="container text-white">
+              {Features_two.map((featureData) => (
+                <Feature key={featureData.name} data={featureData} />
+              ))}
+            </div>
+          </div>
+
+          <div className="container">
+              {Features_three.map((featureData) => (
+                <Feature key={featureData.name} data={featureData} />
+              ))}
+            </div>
+        </section>
+
+        <section>
+          <div className="container">
+              <div className="pb-[120px]">
+                <div>
+                  <h2 className="text-[32px] leading-[42px] font-bold text-center md:text-5xl md:leading-[62px]">And many more features</h2>
+                </div>
+                <div className="mt-[80px] grid features_grid gap-6">
+                  {
+                    FeaturesCard.map((cardData) => (
+                      <FeatureCard data={cardData} key={cardData.heading}/>
+                    ))
+                  }
+                </div>
+              </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="container">
+            <div>
+              <div>
+                <h3 className="text-center font-medium text-[32px] leading-[42px] mb-[45px]">Before</h3>
+                <div className="grid max grid-cols-5 max-lg-1150:gap-[10px] gap-y-[20px] lg-1150:grid-cols-11 lg-1150:gap-x-[40px] place-items-center">
+                  {
+                    BeforeData.map(beforeData => (
+                      <>
+                        <div className="flex flex-col gap-4 items-center justify-center">
+                          <div className="w-[63px] h-[63px] lg-1150:w-[90px] lg-1150:h-[90px] grid place-items-center p-4 lg-1150:p[22px] bg-white shadow-md rounded-[50%]">
+                            <img src={beforeData.img} alt={beforeData.name} />
+                          </div>
+                          <p className="lg-1150:text-base text-[12px] leading-[15px] lg-110:leading-[23px] whitespace-nowrap">{beforeData.name}</p>
+                        </div>
+                        {beforeData.span && <span className={`${beforeData.remove_Span ? "max-lg-1150:hidden" : ""} text-[28px]`}>+</span>}
+                      </>
+                    ))
+                  }
+                </div>
+              </div>
+              <div className="mt-[80px] flex flex-col items-center">
+                  <h3 className="text-center font-medium text-[32px] leading-[42px] mb-[45px]">Now</h3>
+                  <img className="w-[90px] h-[90px] mb-4" src="images/klas-logo.svg" alt="klas logo"/>
+                  <p className="text-lg">All you need is Klas</p>
+              </div>
             </div>
           </div>
         </section>
