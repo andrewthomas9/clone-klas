@@ -4,29 +4,7 @@ import Link from "next/link";
 import { Logo } from "./Logo";
 // import { SmallLogo } from "./Logo";
 import { useState } from "react";
-
-const NavLinks = [
-  {
-    name: "Home",
-    url: "/",
-  },
-  {
-    name: "Pricing",
-    url: "/pricing",
-  },
-  {
-    name: "Company",
-    url: "/company",
-  },
-  {
-    name: "Case Studies",
-    url: "/case-studies",
-  },
-  {
-    name: "Products",
-    url: "/products",
-  },
-];
+import { NavLinks } from "@/data/Data";
 
 const Header = () => {
   // const [width, setWidth] = useState(window.innerWidth);

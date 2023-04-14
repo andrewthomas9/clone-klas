@@ -5,33 +5,9 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import CountUp from "react-countup";
-
-const images = [
-  {
-    name: "alida-school",
-    url: "images/alida-school.svg"
-  },
-  {
-    name: "univelcity",
-    url: "images/univelcity.svg"
-  },
-  {
-    name: "ai-school",
-    url: "images/ai-school.svg"
-  },
-  {
-    name: "mdena",
-    url: "images/mdena.svg"
-  },
-  {
-    name: "design-pal",
-    url: "images/design-pal.svg"
-  },
-  {
-    name: "dev-careers",
-    url: "images/dev-careers.svg"
-  },
-]
+import { images } from "@/data/Data";
+import { marqueeData } from "@/data/Data";
+import Marquee from "react-fast-marquee";
 
 const HomePage = () => {
   return (
@@ -106,24 +82,77 @@ const HomePage = () => {
               <div className="flex text-left max-md:items-center max-md:justify-center max-md:text-center flex-wrap justify-between max-w-[1030px] mx-auto mb-[80px]">
                 <div className="flex flex-col h-[100px] pl-[20px] justify-center relative">
                   <span className="absolute max-md:hidden h-full top-0 left-0 span_gradient w-[2px]"></span>
-                  <h3 className="text-[32px] leading-[42px] max-md:text-2xl mb-[11px] font-bold"><CountUp end={85000} duration={2} enableScrollSpy={true} />+</h3>
-                  <p className="text-[20px] leading-[26px] text-[rgba(0,0,0,.8)] max-md:text-base">Students globally</p>
+                  <h3 className="text-[32px] leading-[42px] max-md:text-2xl mb-[11px] font-bold">
+                    <CountUp end={85000} duration={2} enableScrollSpy={true} />+
+                  </h3>
+                  <p className="text-[20px] leading-[26px] text-[rgba(0,0,0,.8)] max-md:text-base">
+                    Students globally
+                  </p>
                 </div>
                 <div className="flex flex-col h-[100px] pl-[20px] justify-center relative">
                   <span className="absolute max-md:hidden h-full top-0 left-0 span_gradient w-[2px]"></span>
-                  <h3 className="text-[32px] leading-[42px] max-md:text-2xl mb-[11px] font-bold"><CountUp end={1200} duration={2} enableScrollSpy={true} />+</h3>
-                  <p className="text-[20px] leading-[26px] text-[rgba(0,0,0,.8)] max-md:text-base">Virtual academies</p>
+                  <h3 className="text-[32px] leading-[42px] max-md:text-2xl mb-[11px] font-bold">
+                    <CountUp end={1200} duration={2} enableScrollSpy={true} />+
+                  </h3>
+                  <p className="text-[20px] leading-[26px] text-[rgba(0,0,0,.8)] max-md:text-base">
+                    Virtual academies
+                  </p>
                 </div>
                 <div className="flex flex-col h-[100px] pl-[20px] justify-center relative">
                   <span className="absolute max-md:hidden h-full top-0 left-0 span_gradient w-[2px]"></span>
-                  <h3 className="text-[32px] leading-[42px] max-md:text-2xl mb-[11px] font-bold"><CountUp end={27} duration={2} enableScrollSpy={true} /></h3>
-                  <p className="text-[20px] leading-[26px] text-[rgba(0,0,0,.8)] max-md:text-base">Countries reached</p>
+                  <h3 className="text-[32px] leading-[42px] max-md:text-2xl mb-[11px] font-bold">
+                    <CountUp end={27} duration={2} enableScrollSpy={true} />
+                  </h3>
+                  <p className="text-[20px] leading-[26px] text-[rgba(0,0,0,.8)] max-md:text-base">
+                    Countries reached
+                  </p>
                 </div>
               </div>
               <div className="flex items-center justify-center lg-1150:justify-between gap-[40px] flex-wrap">
                 {images.map(({ name, url }) => (
-                  <img key={name} alt={name} src={url}/>
+                  <img key={name} alt={name} src={url} />
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="mb-[160px]">
+            <div className="flex flex-col gap-[80px]">
+              <h1 className="text-5xl leading-[62px] max-md:text-[32px] max-md:leading-[42px] text-black text-center font-bold">
+                Teach anything online with Klas
+              </h1>
+              <div className="grid">
+                <div className="overflow-hidden">
+                  <Marquee pauseOnHover speed={45} className="flex gap-6" gradient={false}>
+                    <span className="grid grid-cols-6 gap-6 ">
+                      {marqueeData.map(({ text, url }) => (
+                        <div
+                          className="relative grid place-items-center"
+                          key={text}
+                        >
+                          <img className="w-[311px] h-[292px]" src={url} alt={text} />
+                          <h3 className="relative text-white text-base bottom-[30px] font-bold text-center">
+                            {text}
+                          </h3>
+                        </div>
+                      ))}
+                    </span>
+                    <span className="grid gap-6 grid-cols-6">
+                      {marqueeData.map(({ text, url }) => (
+                        <div
+                          className="relative grid place-items-center"
+                          key={text}
+                        >
+                          <img className="w-[311px] h-[292px]" src={url} alt={text} />
+                          <h3 className="relative text-white text-base bottom-[30px] font-bold text-center">
+                            {text}
+                          </h3>
+                        </div>
+                      ))}
+                    </span>
+                  </Marquee>
+                </div>
               </div>
             </div>
           </div>
