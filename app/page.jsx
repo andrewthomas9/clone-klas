@@ -13,6 +13,7 @@ import Feature from "./components/Feature";
 import { FeatureCard } from "./components/Feature";
 import { FeaturesCard } from "@/data/Data";
 import { BeforeData } from "@/data/Data";
+import SwiperComponent from "./components/swiper/Swiper";
 
 const HomePage = () => {
   return (
@@ -203,26 +204,26 @@ const HomePage = () => {
           </div>
 
           <div className="container">
-              {Features_three.map((featureData) => (
-                <Feature key={featureData.name} data={featureData} />
-              ))}
-            </div>
+            {Features_three.map((featureData) => (
+              <Feature key={featureData.name} data={featureData} />
+            ))}
+          </div>
         </section>
 
         <section>
           <div className="container">
-              <div className="pb-[120px]">
-                <div>
-                  <h2 className="text-[32px] leading-[42px] font-bold text-center md:text-5xl md:leading-[62px]">And many more features</h2>
-                </div>
-                <div className="mt-[80px] grid features_grid gap-6">
-                  {
-                    FeaturesCard.map((cardData) => (
-                      <FeatureCard data={cardData} key={cardData.heading}/>
-                    ))
-                  }
-                </div>
+            <div className="pb-[120px]">
+              <div>
+                <h2 className="text-[32px] leading-[42px] font-bold text-center md:text-5xl md:leading-[62px]">
+                  And many more features
+                </h2>
               </div>
+              <div className="mt-[80px] grid features_grid gap-6">
+                {FeaturesCard.map((cardData) => (
+                  <FeatureCard data={cardData} key={cardData.heading} />
+                ))}
+              </div>
+            </div>
           </div>
         </section>
 
@@ -230,28 +231,77 @@ const HomePage = () => {
           <div className="container">
             <div>
               <div>
-                <h3 className="text-center font-medium text-[32px] leading-[42px] mb-[45px]">Before</h3>
+                <h3 className="text-center font-medium text-[32px] leading-[42px] mb-[45px]">
+                  Before
+                </h3>
                 <div className="grid max grid-cols-5 max-lg-1150:gap-[10px] gap-y-[20px] lg-1150:grid-cols-11 lg-1150:gap-x-[40px] place-items-center">
-                  {
-                    BeforeData.map(beforeData => (
-                      <>
-                        <div className="flex flex-col gap-4 items-center justify-center">
-                          <div className="w-[63px] h-[63px] lg-1150:w-[90px] lg-1150:h-[90px] grid place-items-center p-4 lg-1150:p[22px] bg-white shadow-md rounded-[50%]">
-                            <img src={beforeData.img} alt={beforeData.name} />
-                          </div>
-                          <p className="lg-1150:text-base text-[12px] leading-[15px] lg-110:leading-[23px] whitespace-nowrap">{beforeData.name}</p>
+                  {BeforeData.map((beforeData) => (
+                    <>
+                      <div className="flex flex-col gap-4 items-center justify-center">
+                        <div className="w-[63px] h-[63px] lg-1150:w-[90px] lg-1150:h-[90px] grid place-items-center p-4 lg-1150:p[22px] bg-white shadow-md rounded-[50%]">
+                          <img src={beforeData.img} alt={beforeData.name} />
                         </div>
-                        {beforeData.span && <span className={`${beforeData.remove_Span ? "max-lg-1150:hidden" : ""} text-[28px]`}>+</span>}
-                      </>
-                    ))
-                  }
+                        <p className="lg-1150:text-base text-[12px] leading-[15px] lg-110:leading-[23px] whitespace-nowrap">
+                          {beforeData.name}
+                        </p>
+                      </div>
+                      {beforeData.span && (
+                        <span
+                          className={`${
+                            beforeData.remove_Span ? "max-lg-1150:hidden" : ""
+                          } text-[28px]`}
+                        >
+                          +
+                        </span>
+                      )}
+                    </>
+                  ))}
                 </div>
               </div>
               <div className="mt-[80px] flex flex-col items-center">
-                  <h3 className="text-center font-medium text-[32px] leading-[42px] mb-[45px]">Now</h3>
-                  <img className="w-[90px] h-[90px] mb-4" src="images/klas-logo.svg" alt="klas logo"/>
-                  <p className="text-lg">All you need is Klas</p>
+                <h3 className="text-center font-medium text-[32px] leading-[42px] mb-[45px]">
+                  Now
+                </h3>
+                <img
+                  className="w-[90px] h-[90px] mb-4"
+                  src="images/klas-logo.svg"
+                  alt="klas logo"
+                />
+                <p className="text-lg">All you need is Klas</p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-[160px]">
+          <div className="container">
+            <div className="my-[160px] flex flex-col gap-[80px]">
+              <div>
+                <div>
+                  <h2 className="text-[32px] leading-[42px] font-bold text-center md:text-5xl md:leading-[62px]">
+                    Don't just take our word for it...
+                  </h2>
+                </div>
+              </div>
+              <div>{/* <SwiperComponent /> */}</div>
+            </div>
+          </div>
+        </section>
+
+        <section className="container mb-[160px]">
+          <div>
+            <div className="py-[50px] text-center max-w-[1000px] my-0 mx-auto px-[24px] md:py-[120px] flex flex-col items-center gradient rounded-[18px]">
+              <div className="mb-[40px]">
+                <h1 className="font-bold md:text-5xl mb-4 md:leading-[62px] text-[28px] leading-[36px] text-white">
+                  Ready to start teaching?
+                </h1>
+                <p className="md:text-2xl text-gray-300 leading-[24px] text-base">
+                  Use Klas to create and manage your online academy
+                </p>
+              </div>
+              <Link className="md:text-[20px] font-medium rounded-3xl py-[14px] px-[28px] text-purple-100 md:leading-[28px] md:py-[16px] md:px-[50px] bg-white" href="/signup">
+                Sign up free
+              </Link>
             </div>
           </div>
         </section>

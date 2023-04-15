@@ -171,72 +171,98 @@ export const Features_three = [
       ],
     },
     img: "images/team.png",
-    color: "#1127e3"
-  }
+    color: "#1127e3",
+  },
 ];
 
 export const FeaturesCard = [
-    {
-        img: "images/undraw_dashboard.png",
-        heading: "Student dashboards",
-        paragraph: "A central learning hub for your students track upcoming classes, quizzes."
-    },
-    {
-        img: "images/undraw_online_test.png",
-        heading: "Engaging quizzes",
-        paragraph: "Create engaging quizzes for students, enjoy automated marking."
-    },
-    {
-        img: "images/undraw_video_files.png",
-        heading: "Resources library ",
-        paragraph: "Upload supplementary materials such as videos, docs, presentations."
-    },
-    {
-        img: "images/undraw_reminders.png",
-        heading: "Class reminders",
-        paragraph: "Send SMS/email reminders for your class via Klas Notify."
-    },
-    {
-        img: "images/undraw_booking.png",
-        heading: "Booking pages",
-        paragraph: "Easily collect free or paid enrolments from students."
-    },
-    {
-        img: "images/undraw_analytics.png",
-        heading: "Advanced analytics",
-        paragraph: "Track your student attendance, learning progress, and more."
-    },
-]
+  {
+    img: "images/undraw_dashboard.png",
+    heading: "Student dashboards",
+    paragraph:
+      "A central learning hub for your students track upcoming classes, quizzes.",
+  },
+  {
+    img: "images/undraw_online_test.png",
+    heading: "Engaging quizzes",
+    paragraph: "Create engaging quizzes for students, enjoy automated marking.",
+  },
+  {
+    img: "images/undraw_video_files.png",
+    heading: "Resources library ",
+    paragraph:
+      "Upload supplementary materials such as videos, docs, presentations.",
+  },
+  {
+    img: "images/undraw_reminders.png",
+    heading: "Class reminders",
+    paragraph: "Send SMS/email reminders for your class via Klas Notify.",
+  },
+  {
+    img: "images/undraw_booking.png",
+    heading: "Booking pages",
+    paragraph: "Easily collect free or paid enrolments from students.",
+  },
+  {
+    img: "images/undraw_analytics.png",
+    heading: "Advanced analytics",
+    paragraph: "Track your student attendance, learning progress, and more.",
+  },
+];
 
 export const BeforeData = [
-    {
-        name: "Class hosting",
-        img: "images/zoom.svg",
-        span: true
-    },
-    {
-        name: "Scheduling",
-        img: "images/calendar.svg",
-        span: true
-    },
-    {
-        name: "Student records",
-        img: "images/spread.svg",
-        span: true,
-        remove_Span: true
-    },
-    {
-        name: "Community",
-        img: "images/slack.svg",
-        span: true
-    },
-    {
-        name: "Payments",
-        img: "images/PayPal.svg",
-        span: true
-    },
-    {
-        name: "Class reminders",
-        img: "images/mailchimp.svg",
-    },
-]
+  {
+    name: "Class hosting",
+    img: "images/zoom.svg",
+    span: true,
+  },
+  {
+    name: "Scheduling",
+    img: "images/calendar.svg",
+    span: true,
+  },
+  {
+    name: "Student records",
+    img: "images/spread.svg",
+    span: true,
+    remove_Span: true,
+  },
+  {
+    name: "Community",
+    img: "images/slack.svg",
+    span: true,
+  },
+  {
+    name: "Payments",
+    img: "images/PayPal.svg",
+    span: true,
+  },
+  {
+    name: "Class reminders",
+    img: "images/mailchimp.svg",
+  },
+];
+
+export const SwiperData = [
+  {
+    testimony:
+      "“Klas is a brilliant platform for creators to share and monetize their expertise. The technology is fabulous and team is very professional. Delighted to be a partner.” ",
+    name: "Haryy Stamper",
+    company: "CEO, Holistic Academy",
+    img: "images/person1.png",
+  },
+  {
+    testimony:
+      "“Working with Klas has been one of the spotlights of the year for Codenovation. The platform is easy to use, seamless, and has excellent customer service. Thanks for making it easy to teach online.” ",
+    name: "Shola Akinrolie",
+    company: "Founder, Codenovation",
+    img: "images/person2.png",
+  },
+  {
+    testimony:
+      "“Great UI, easy to use, and straightforward. Excited to host more mandarin class on Klas.”",
+    name: "Margaret Anavhe",
+    company: "Mandarin Speaker",
+    img: "images/person3.png",
+  },
+];
