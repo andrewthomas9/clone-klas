@@ -232,7 +232,7 @@ export const BeforeData = [
     },
     {
         name: "Payments",
-        img: "images/Paypal.svg",
+        img: "images/PayPal.svg",
         span: true
     },
     {
