@@ -84,3 +84,11 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+.box-shadow {
+  box-shadow: 0 4px 20px rgba(0,0,0,.1);
+}
+
+.pricing-list li {
+  @apply flex text-left font-normal text-base leading-[18px] items-start justify-start mb-[22px] gap-[18px]
+}

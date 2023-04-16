@@ -13,7 +13,8 @@ import Feature from "./components/Feature";
 import { FeatureCard } from "./components/Feature";
 import { FeaturesCard } from "@/data/Data";
 import { BeforeData } from "@/data/Data";
-import SwiperComponent from "./components/swiper/Swiper";
+import CallToAction from "./components/CTA";
+// import SwiperComponent from "./components/swiper/Swiper";
 
 const HomePage = () => {
   return (
@@ -77,7 +78,7 @@ const HomePage = () => {
                 animate={{ x: 0 }}
                 className="flex justify-center"
               >
-                <Image src="/images/hero.png" width={640} height={640} />
+                <Image src="/images/home/hero.png" width={640} height={640} />
               </motion.div>
             </div>
           </div>
@@ -288,23 +289,7 @@ const HomePage = () => {
           </div>
         </section>
 
-        <section className="container mb-[160px]">
-          <div>
-            <div className="py-[50px] text-center max-w-[1000px] my-0 mx-auto px-[24px] md:py-[120px] flex flex-col items-center gradient rounded-[18px]">
-              <div className="mb-[40px]">
-                <h1 className="font-bold md:text-5xl mb-4 md:leading-[62px] text-[28px] leading-[36px] text-white">
-                  Ready to start teaching?
-                </h1>
-                <p className="md:text-2xl text-gray-300 leading-[24px] text-base">
-                  Use Klas to create and manage your online academy
-                </p>
-              </div>
-              <Link className="md:text-[20px] font-medium rounded-3xl py-[14px] px-[28px] text-purple-100 md:leading-[28px] md:py-[16px] md:px-[50px] bg-white" href="/signup">
-                Sign up free
-              </Link>
-            </div>
-          </div>
-        </section>
+        <CallToAction />
       </main>
     </>
   );

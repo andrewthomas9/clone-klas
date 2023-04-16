@@ -1,27 +1,27 @@
 export const images = [
   {
     name: "alida-school",
-    url: "images/alida-school.svg",
+    url: "images/home/alida-school.svg",
   },
   {
     name: "univelcity",
-    url: "images/univelcity.svg",
+    url: "images/home/univelcity.svg",
   },
   {
     name: "ai-school",
-    url: "images/ai-school.svg",
+    url: "images/home/ai-school.svg",
   },
   {
     name: "mdena",
-    url: "images/mdena.svg",
+    url: "images/home/mdena.svg",
   },
   {
     name: "design-pal",
-    url: "images/design-pal.svg",
+    url: "images/home/design-pal.svg",
   },
   {
     name: "dev-careers",
-    url: "images/dev-careers.svg",
+    url: "images/home/dev-careers.svg",
   },
 ];
 
@@ -51,51 +51,51 @@ export const NavLinks = [
 export const marqueeData = [
   {
     text: "Languages",
-    url: "images/languages.png",
+    url: "images/home/languages.png",
   },
   {
     text: "Technology",
-    url: "images/technology.png",
+    url: "images/home/technology.png",
   },
   {
     text: "Web3",
-    url: "images/web3.png",
+    url: "images/home/web3.png",
   },
   {
     text: "Webinars",
-    url: "images/finance.png",
+    url: "images/home/finance.png",
   },
   {
     text: "Business",
-    url: "images/business.png",
+    url: "images/home/business.png",
   },
   {
     text: "Leadership",
-    url: "images/leadership.png",
+    url: "images/home/leadership.png",
   },
   {
     text: "Cooking",
-    url: "images/cooking.png",
+    url: "images/home/cooking.png",
   },
   {
     text: "Yoga",
-    url: "images/yoga.png",
+    url: "images/home/yoga.png",
   },
   {
     text: "Physics",
-    url: "images/physics.png",
+    url: "images/home/physics.png",
   },
   {
     text: "Investing",
-    url: "images/investing.png",
+    url: "images/home/investing.png",
   },
   {
     text: "History",
-    url: "images/history.png",
+    url: "images/home/history.png",
   },
   {
     text: "Marketing",
-    url: "images/marketing.png",
+    url: "images/home/marketing.png",
   },
 ];
 
@@ -110,7 +110,7 @@ export const Features_one = [
         "Host up to 5,000 learners per class",
       ],
     },
-    img: "images/tools.png",
+    img: "images/home/tools.png",
     color: "#1127e3",
     reverse: true,
   },
@@ -124,7 +124,7 @@ export const Features_one = [
         "Unlimited transactions, 1.5% enrolment fee",
       ],
     },
-    img: "images/payment.png",
+    img: "images/home/payment.png",
     color: "#1127e3",
   },
 ];
@@ -140,7 +140,7 @@ export const Features_two = [
         "Watch past recordings and upload resources for each class",
       ],
     },
-    img: "images/dashboard.png",
+    img: "images/home/dashboard.png",
     color: "#fff",
     reverse: true,
   },
@@ -154,7 +154,7 @@ export const Features_two = [
         "Searchable student directory and rich profiles",
       ],
     },
-    img: "images/room.png",
+    img: "images/home/room.png",
     color: "#fff",
   },
 ];
@@ -170,41 +170,41 @@ export const Features_three = [
         "Manage all your team's classes",
       ],
     },
-    img: "images/team.png",
+    img: "images/home/team.png",
     color: "#1127e3",
   },
 ];
 
 export const FeaturesCard = [
   {
-    img: "images/undraw_dashboard.png",
+    img: "images/home/undraw_dashboard.png",
     heading: "Student dashboards",
     paragraph:
       "A central learning hub for your students track upcoming classes, quizzes.",
   },
   {
-    img: "images/undraw_online_test.png",
+    img: "images/home/undraw_online_test.png",
     heading: "Engaging quizzes",
     paragraph: "Create engaging quizzes for students, enjoy automated marking.",
   },
   {
-    img: "images/undraw_video_files.png",
+    img: "images/home/undraw_video_files.png",
     heading: "Resources library ",
     paragraph:
       "Upload supplementary materials such as videos, docs, presentations.",
   },
   {
-    img: "images/undraw_reminders.png",
+    img: "images/home/undraw_reminders.png",
     heading: "Class reminders",
     paragraph: "Send SMS/email reminders for your class via Klas Notify.",
   },
   {
-    img: "images/undraw_booking.png",
+    img: "images/home/undraw_booking.png",
     heading: "Booking pages",
     paragraph: "Easily collect free or paid enrolments from students.",
   },
   {
-    img: "images/undraw_analytics.png",
+    img: "images/home/undraw_analytics.png",
     heading: "Advanced analytics",
     paragraph: "Track your student attendance, learning progress, and more.",
   },
@@ -213,33 +213,33 @@ export const FeaturesCard = [
 export const BeforeData = [
   {
     name: "Class hosting",
-    img: "images/zoom.svg",
+    img: "images/home/zoom.svg",
     span: true,
   },
   {
     name: "Scheduling",
-    img: "images/calendar.svg",
+    img: "images/home/calendar.svg",
     span: true,
   },
   {
     name: "Student records",
-    img: "images/spread.svg",
+    img: "images/home/spread.svg",
     span: true,
     remove_Span: true,
   },
   {
     name: "Community",
-    img: "images/slack.svg",
+    img: "images/home/slack.svg",
     span: true,
   },
   {
     name: "Payments",
-    img: "images/PayPal.svg",
+    img: "images/home/PayPal.svg",
     span: true,
   },
   {
     name: "Class reminders",
-    img: "images/mailchimp.svg",
+    img: "images/home/mailchimp.svg",
   },
 ];
 
@@ -249,20 +249,120 @@ export const SwiperData = [
       "“Klas is a brilliant platform for creators to share and monetize their expertise. The technology is fabulous and team is very professional. Delighted to be a partner.” ",
     name: "Haryy Stamper",
     company: "CEO, Holistic Academy",
-    img: "images/person1.png",
+    img: "images/home/person1.png",
   },
   {
     testimony:
       "“Working with Klas has been one of the spotlights of the year for Codenovation. The platform is easy to use, seamless, and has excellent customer service. Thanks for making it easy to teach online.” ",
     name: "Shola Akinrolie",
     company: "Founder, Codenovation",
-    img: "images/person2.png",
+    img: "images/home/person2.png",
   },
   {
     testimony:
       "“Great UI, easy to use, and straightforward. Excited to host more mandarin class on Klas.”",
     name: "Margaret Anavhe",
     company: "Mandarin Speaker",
-    img: "images/person3.png",
+    img: "images/home/person3.png",
+  },
+];
+
+// pricing page
+
+export const PricingData = [
+  {
+    plan: "Free",
+    containerStyles: "min-[500px]:w-[386px] max-[500px]:w-full flex items-center justify-center flex-col row-[1] col-[1] justify-self-center tab:row-[2] lg-1150:row-[1] tab:col-[1/4] lg-1150:col-[1/3] tab:justify-self-start lg-1150:justify-self-end h-[950px] rounded-3xl box-shadow bg-[rgba(17,39,227,.08)]",
+    description: "Everything you need to start teaching online",
+    top: {
+      price: {
+        amount: "0",
+        duration: "/month",
+      },
+      button: {
+        text: "Try for Free",
+        styles: "py-[20px] px-[40px] bg-transparent rounded-[50px] outline-none border border-blue-100 text-blue-100 font-semibold text-base leading-[18px] capitalize",
+      },
+      containerStyles: "",
+    },
+    bottom: {
+      list: [
+        "Host up to 50 students per class",
+        "Time limit is 40 mins",
+        "Unlimited classes",
+        "Easy scheduling",
+        "Accept payments via Stripe",
+        "Beautiful booking pages",
+        "Built-in chat room",
+        "Analytics & attendance tracking",
+        "Resources library for docs, videos",
+        "Student dashboard",
+        "10% transaction fee on bookings",
+      ],
+      containerStyles: ""
+    },
+    background: "",
+  },
+  {
+    plan: "Pro",
+    proIcon: "images/pricingpage/pro.svg",
+    containerStyles: "min-[500px]:w-[386px] max-[500px]:w-full flex items-center justify-center flex-col max-tab:row-[2] row-[1] col-[1] tab:col-[2/5] justify-self-center h-[990px] rounded-3xl box-shadow z-10 bg-white",
+    description: "Turn your Klas academy into a successful business",
+    top: {
+      price: {
+        amount: "29",
+        duration: "/mo",
+      },
+      button: {
+        text: "Get Started",
+        styles: "py-[20px] px-[40px] bg-blue-100 rounded-[50px] text-white font-semibold text-base leading-[18px] capitalize",
+      },
+    },
+    bottom: {
+      subhead: "Everything in Free, including",
+      list: [
+        "Host up to 500 students per class",
+        " Time limit is 2 hours",
+        "Unlimited classes",
+        "Custom branding",
+        "Detailed class insights & analytics",
+        "Class recordings and cloud storage",
+        "Email marketing Email marketing",
+        "3% transaction fee on bookings",
+      ],
+    },
+    background: "",
+  },
+  {
+    plan: "Plus",
+    containerStyles: "min-[500px]:w-[386px] max-[500px]:w-full flex items-center justify-center flex-col row-[3] col-[1] justify-self-center tab:row-[2] lg-1150:row-[1] tab:col-[3/-1] lg-1150:col-[4/-1] tab:justify-self-end lg-1150:justify-self-start h-[950px] rounded-3xl box-shadow bg-[rgba(17,39,227,.08)]",
+    description: "Take your Klas academy to the next level",
+    top: {
+      price: {
+        amount: "0.50",
+        duration: "/per student/mo",
+      },
+      button: {
+        text: "Coming Soon",
+        styles: "py-[20px] px-[40px] bg-transparent rounded-[50px] outline-none border border-blue-100 text-blue-100 font-semibold text-base leading-[18px] capitalize",
+      },
+      containerStyles: "",
+    },
+    bottom: {
+      subhead: "Everything in Pro, including",
+      list: [
+        "Host up to 1000 students per class",
+        "No time limit",
+        "Unlimited classes",
+        "Password protected recordings",
+        "Priority support",
+        "Instant class transcriptions",
+        "Fully customizable",
+        "Custom onboarding",
+        "2% transaction fee on bookings",
+      ],
+      containerStyles: "",
+    },
+    background: "",
   },
 ];
