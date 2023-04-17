@@ -26,7 +26,7 @@ const PricingCard = ({ data }) => {
   );
 
   return (
-    <div className={data.containerStyles}>
+    <div className="min-[500px]:w-[386px] max-[500px]:w-full flex items-center justify-center flex-col row-[1] col-[1] justify-self-center tab:row-[2] lg-1150:row-[1] tab:col-[1/4] lg-1150:col-[1/3] tab:justify-self-start lg-1150:justify-self-end h-[950px] rounded-3xl box-shadow bg-[rgba(17,39,227,.08)]">
       <div className="space-y-7 border-b w-full border-b-[rgba(0,0,0,.15)] flex flex-col justify-between mb-[40px] pb-[50px] px-[20px] items-center">
         <h2 className="font-bold text-[32px] leading-[35px] flex items-center justify-center gap-[10px]">
           {data.proIcon && <img href={data.proIcon} alt="pro"/>}{data.plan}
