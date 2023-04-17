@@ -11,7 +11,7 @@ const FrequentlyAskedQuestions = ({data}) => {
   return (
     <section className="py-[80px]">
       <div className="container">
-        <div className="mb-[100px]">
+        <div className="max-md:mb-[40px] mb-[100px]">
           <h2 className="text-5xl leading-[62px] max-md:text-[32px] max-md:leading-[42px] text-black text-center font-bold">
             Frequently asked questions
           </h2>
