@@ -315,7 +315,7 @@ export const PricingData = [
       },
       button: {
         text: "Get Started",
-        styles: "py-[20px] px-[40px] bg-blue-100 rounded-[50px] text-white font-semibold text-base leading-[18px] capitalize",
+        styles: "py-5 px-[40px] bg-blue-100 rounded-[50px] text-white font-semibold text-base leading-[18px] capitalize",
       },
     },
     bottom: {

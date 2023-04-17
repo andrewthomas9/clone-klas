@@ -265,7 +265,7 @@ const HomePage = () => {
                 </h3>
                 <img
                   className="w-[90px] h-[90px] mb-4"
-                  src="images/klas-logo.svg"
+                  src="images/home/klas-logo.svg"
                   alt="klas logo"
                 />
                 <p className="text-lg">All you need is Klas</p>
