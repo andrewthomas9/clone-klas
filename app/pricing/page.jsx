@@ -1,5 +1,4 @@
 import React from "react";
-import PricingCard from "../components/PricingCard";
 import CallToAction from "../components/CTA";
 import Link from "next/link";
 
@@ -598,13 +597,13 @@ const PricingPage = () => {
               </p>
             </div>
             <div className="flex items-center justify-center gap-[25px] flex-wrap">
-              <div className="h-[350px] space-y-3 rounded-[24px] p-[40px] box-shadow bg-white">
+              <div className="h-[350px] flex flex-col gap-[30px] rounded-[24px] p-[40px] box-shadow bg-white">
                 <div className="mb-[30px]">
                   <h3 className="font-bold text-[17px] mb-[8px] leading-[19px]">
                     Large Classes
                   </h3>
                   <p className="text-sm font-normal leading-[15px] text-[rgba(0,0,0,.6)]">
-                    Starting at $1,500 per mo
+                    Starting at $1,500 Per Mo
                   </p>
                 </div>
                 <div>
@@ -648,7 +647,7 @@ const PricingPage = () => {
                   </div>
                 </div>
                 <Link
-                  className="bg-blue-100 text-white font-semibold text-sm py-[14px] px-[28px] rounded-[24px] leading-[15px]"
+                  className="bg-blue-100 text-center text-white font-semibold text-sm py-[14px] px-[28px] rounded-[24px] leading-[15px]"
                   href="https://calendly.com/klas-demo/add-on-plans"
                   target="_blank"
                   rel="noreferrer"
@@ -656,13 +655,13 @@ const PricingPage = () => {
                   Contact Us
                 </Link>
               </div>
-              <div className="h-[350px] rounded-[24px] p-[40px] justify-start flex flex-col box-shadow bg-white">
+              <div className="h-[350px] rounded-[24px] p-[40px] justify-start flex flex-col gap-[10px] box-shadow bg-white">
                 <div className="mb-[30px]">
                   <h3 className="font-bold text-[17px] mb-[8px] leading-[19px]">
                     Teams
                   </h3>
                   <p className="text-sm font-normal leading-[15px] text-[rgba(0,0,0,.6)]">
-                    $15/instructor per mo
+                    $15/Instructor Per Mo
                   </p>
                 </div>
                 <div>
@@ -721,15 +720,15 @@ const PricingPage = () => {
                       </li>
                     </ul>
                   </div>
+                </div>
                   <Link
-                    className="bg-blue-100 text-white font-semibold mt-7 text-sm py-[14px] px-[28px] rounded-[24px] leading-[15px]"
+                    className="bg-blue-100 text-center text-white font-semibold text-sm py-[14px] px-[28px] rounded-[24px] leading-[15px]"
                     href="https://calendly.com/klas-demo/add-on-plans"
                     target="_blank"
                     rel="noreferrer"
                   >
                     Contact Us
                   </Link>
-                </div>
               </div>
             </div>
           </div>

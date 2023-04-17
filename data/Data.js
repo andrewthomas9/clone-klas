@@ -267,102 +267,102 @@ export const SwiperData = [
   },
 ];
 
-// pricing page
+// // pricing page
 
-export const PricingData = [
-  {
-    plan: "Free",
-    containerStyles: "min-[500px]:w-[386px] max-[500px]:w-full flex items-center justify-center flex-col row-[1] col-[1] justify-self-center tab:row-[2] lg-1150:row-[1] tab:col-[1/4] lg-1150:col-[1/3] tab:justify-self-start lg-1150:justify-self-end h-[950px] rounded-3xl box-shadow bg-[rgba(17,39,227,.08)]",
-    description: "Everything you need to start teaching online",
-    top: {
-      price: {
-        amount: "0",
-        duration: "/month",
-      },
-      button: {
-        text: "Try for Free",
-        styles: "py-[20px] px-[40px] bg-transparent rounded-[50px] outline-none border border-blue-100 text-blue-100 font-semibold text-base leading-[18px] capitalize",
-      },
-      containerStyles: "",
-    },
-    bottom: {
-      list: [
-        "Host up to 50 students per class",
-        "Time limit is 40 mins",
-        "Unlimited classes",
-        "Easy scheduling",
-        "Accept payments via Stripe",
-        "Beautiful booking pages",
-        "Built-in chat room",
-        "Analytics & attendance tracking",
-        "Resources library for docs, videos",
-        "Student dashboard",
-        "10% transaction fee on bookings",
-      ],
-      containerStyles: ""
-    },
-    background: "",
-  },
-  {
-    plan: "Pro",
-    proIcon: "images/pricingpage/pro.svg",
-    containerStyles: "min-[500px]:w-[386px] max-[500px]:w-full flex items-center justify-center flex-col max-tab:row-[2] row-[1] col-[1] tab:col-[2/5] justify-self-center h-[990px] rounded-3xl box-shadow z-10 bg-white",
-    description: "Turn your Klas academy into a successful business",
-    top: {
-      price: {
-        amount: "29",
-        duration: "/mo",
-      },
-      button: {
-        text: "Get Started",
-        styles: "py-5 px-[40px] bg-blue-100 rounded-[50px] text-white font-semibold text-base leading-[18px] capitalize",
-      },
-    },
-    bottom: {
-      subhead: "Everything in Free, including",
-      list: [
-        "Host up to 500 students per class",
-        " Time limit is 2 hours",
-        "Unlimited classes",
-        "Custom branding",
-        "Detailed class insights & analytics",
-        "Class recordings and cloud storage",
-        "Email marketing Email marketing",
-        "3% transaction fee on bookings",
-      ],
-    },
-    background: "",
-  },
-  {
-    plan: "Plus",
-    containerStyles: "min-[500px]:w-[386px] max-[500px]:w-full flex items-center justify-center flex-col row-[3] col-[1] justify-self-center tab:row-[2] lg-1150:row-[1] tab:col-[3/-1] lg-1150:col-[4/-1] tab:justify-self-end lg-1150:justify-self-start h-[950px] rounded-3xl box-shadow bg-[rgba(17,39,227,.08)]",
-    description: "Take your Klas academy to the next level",
-    top: {
-      price: {
-        amount: "0.50",
-        duration: "/per student/mo",
-      },
-      button: {
-        text: "Coming Soon",
-        styles: "py-[20px] px-[40px] bg-transparent rounded-[50px] outline-none border border-blue-100 text-blue-100 font-semibold text-base leading-[18px] capitalize",
-      },
-      containerStyles: "",
-    },
-    bottom: {
-      subhead: "Everything in Pro, including",
-      list: [
-        "Host up to 1000 students per class",
-        "No time limit",
-        "Unlimited classes",
-        "Password protected recordings",
-        "Priority support",
-        "Instant class transcriptions",
-        "Fully customizable",
-        "Custom onboarding",
-        "2% transaction fee on bookings",
-      ],
-      containerStyles: "",
-    },
-    background: "",
-  },
-];
+// export const PricingData = [
+//   {
+//     plan: "Free",
+//     containerStyles: "min-[500px]:w-[386px] max-[500px]:w-full flex items-center justify-center flex-col row-[1] col-[1] justify-self-center tab:row-[2] lg-1150:row-[1] tab:col-[1/4] lg-1150:col-[1/3] tab:justify-self-start lg-1150:justify-self-end h-[950px] rounded-3xl box-shadow bg-[rgba(17,39,227,.08)]",
+//     description: "Everything you need to start teaching online",
+//     top: {
+//       price: {
+//         amount: "0",
+//         duration: "/month",
+//       },
+//       button: {
+//         text: "Try for Free",
+//         styles: "py-[20px] px-[40px] bg-transparent rounded-[50px] outline-none border border-blue-100 text-blue-100 font-semibold text-base leading-[18px] capitalize",
+//       },
+//       containerStyles: "",
+//     },
+//     bottom: {
+//       list: [
+//         "Host up to 50 students per class",
+//         "Time limit is 40 mins",
+//         "Unlimited classes",
+//         "Easy scheduling",
+//         "Accept payments via Stripe",
+//         "Beautiful booking pages",
+//         "Built-in chat room",
+//         "Analytics & attendance tracking",
+//         "Resources library for docs, videos",
+//         "Student dashboard",
+//         "10% transaction fee on bookings",
+//       ],
+//       containerStyles: ""
+//     },
+//     background: "",
+//   },
+//   {
+//     plan: "Pro",
+//     proIcon: "images/pricingpage/pro.svg",
+//     containerStyles: "min-[500px]:w-[386px] max-[500px]:w-full flex items-center justify-center flex-col max-tab:row-[2] row-[1] col-[1] tab:col-[2/5] justify-self-center h-[990px] rounded-3xl box-shadow z-10 bg-white",
+//     description: "Turn your Klas academy into a successful business",
+//     top: {
+//       price: {
+//         amount: "29",
+//         duration: "/mo",
+//       },
+//       button: {
+//         text: "Get Started",
+//         styles: "py-5 px-[40px] bg-blue-100 rounded-[50px] text-white font-semibold text-base leading-[18px] capitalize",
+//       },
+//     },
+//     bottom: {
+//       subhead: "Everything in Free, including",
+//       list: [
+//         "Host up to 500 students per class",
+//         "Time limit is 2 hours",
+//         "Unlimited classes",
+//         "Custom branding",
+//         "Detailed class insights & analytics",
+//         "Class recordings and cloud storage",
+//         "Email marketing Email marketing",
+//         "3% transaction fee on bookings",
+//       ],
+//     },
+//     background: "",
+//   },
+//   {
+//     plan: "Plus",
+//     containerStyles: "min-[500px]:w-[386px] max-[500px]:w-full flex items-center justify-center flex-col row-[3] col-[1] justify-self-center tab:row-[2] lg-1150:row-[1] tab:col-[3/-1] lg-1150:col-[4/-1] tab:justify-self-end lg-1150:justify-self-start h-[950px] rounded-3xl box-shadow bg-[rgba(17,39,227,.08)]",
+//     description: "Take your Klas academy to the next level",
+//     top: {
+//       price: {
+//         amount: "0.50",
+//         duration: "/per student/mo",
+//       },
+//       button: {
+//         text: "Coming Soon",
+//         styles: "py-[20px] px-[40px] bg-transparent rounded-[50px] outline-none border border-blue-100 text-blue-100 font-semibold text-base leading-[18px] capitalize",
+//       },
+//       containerStyles: "",
+//     },
+//     bottom: {
+//       subhead: "Everything in Pro, including",
+//       list: [
+//         "Host up to 1000 students per class",
+//         "No time limit",
+//         "Unlimited classes",
+//         "Password protected recordings",
+//         "Priority support",
+//         "Instant class transcriptions",
+//         "Fully customizable",
+//         "Custom onboarding",
+//         "2% transaction fee on bookings",
+//       ],
+//       containerStyles: "",
+//     },
+//     background: "",
+//   },
+// ];
