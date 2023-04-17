@@ -19,6 +19,7 @@ This project is just a clone of the original [Klas](https://tryklas.com) and is 
 
 - **Next.js 13.3**
 - **Tailwind Css**
+- **Material UI**
 - **Framer Motion**
 
 
