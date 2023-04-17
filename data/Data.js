@@ -366,3 +366,42 @@ export const SwiperData = [
 //     background: "",
 //   },
 // ];
+
+// frequently asked questions
+
+export const PricingFaqData = [
+  {
+    id: 1,
+    question: "Can I cancel my account at any time?",
+    answer:
+      "Yes, if you ever decide Klas isn't the best teaching platform for your needs, simply cancel your account.",
+  },
+  {
+    id: 2,
+    question: "Can I change my plan later on?",
+    answer: "Absolutely, you can upgrade or downgrade your plan at any time.",
+  },
+  {
+    id: 3,
+    question: "In what countries can I use Klas?",
+    answer: "You can use Klas in nearly every country in the world",
+  },
+  {
+    id: 4,
+    question: "Are there any transaction fees on bookings?",
+    answer:
+      "Yes, we charge a transaction fee on bookings depending on your plan. 10% booking fee on free plan, 3% fee on Pro, and 2% fee on Plus.",
+  },
+  {
+    id: 5,
+    question: "Is there a discount for Nonprofits?",
+    answer:
+      "Not yet, but we have that in our 2023 roadmap to launch Klas for Nonprofits. So you can look out for that. ",
+  },
+  {
+    id: 1,
+    question: "How can I receive payouts from my classes?",
+    answer:
+      "We offer instant payouts to our creators. So the moment you start receiving bookings to a class, we pay out the earnings in less than 30 mins.",
+  },
+];

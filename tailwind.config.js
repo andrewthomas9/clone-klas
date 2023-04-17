@@ -30,6 +30,9 @@ module.exports = {
         'tab': "950px",
         'tab-800': "800px",
         'lg-1150': "1150px"
+      },
+      fontFamily: {
+        'serif': ["DM Sans", 'sans-serif']
       }
     },
   },

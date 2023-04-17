@@ -1,6 +1,8 @@
 import React from "react";
 import CallToAction from "../components/CTA";
 import Link from "next/link";
+import FrequentlyAskedQuestions from "../components/FAQ";
+import { PricingFaqData } from "@/data/Data";
 
 const PricingPage = () => {
   return (
@@ -735,6 +737,8 @@ const PricingPage = () => {
         </div>
       </section>
 
+      <FrequentlyAskedQuestions data={PricingFaqData} />
+      
       <CallToAction />
     </main>
   );
