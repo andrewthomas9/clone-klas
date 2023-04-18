@@ -7,7 +7,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 
 const AccordionSummaryStyles = {
-    padding: "20px",
+    padding: "15px",
     marginLeft: "20px",
     marginRight: "20px",
     fontFamily: "DM sans, sans-serif"
@@ -21,7 +21,9 @@ const AccordionSummaryTypo = {
 const AccordionDetailsTypo = {
     fontWeight: 300,
     fontSize: "16px",
-    color: "rgba(0,0,0,.741)"
+    color: "rgba(0,0,0,.741)",
+    paddingLeft: "15px",
+    paddingRight: "15px",
 }
 
 const FrequentlyAskedQuestions = ({ data }) => {
@@ -40,17 +42,15 @@ const FrequentlyAskedQuestions = ({ data }) => {
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
-                // className="max-[600px]:px-[20px] px-[60px] py-[20px]"
                 sx={AccordionSummaryStyles}
               >
                 <Typography 
-                // className="font-semibold text-[18px] leading-[20px]"
                 sx={AccordionSummaryTypo}
                 >
                   {accordion.question}
                 </Typography>
               </AccordionSummary>
-              <AccordionDetails className="px-[60px]">
+              <AccordionDetails>
                 <Typography 
                 // className="font-[300] text-[rgba(0,0,0,.741)] text-[16px] leading-[18px]"
                 sx={AccordionDetailsTypo}
