@@ -5,9 +5,14 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
-import { PricingFaqData } from "@/data/Data";
 
-const FrequentlyAskedQuestions = ({data}) => {
+const AccordionSummaryStyles = {
+    color: "red",
+    padding: "30px 20px",
+    fontFamily: "DM sans, sans-serif"
+}
+
+const FrequentlyAskedQuestions = ({ data }) => {
   return (
     <section className="py-[80px]">
       <div className="container">
@@ -17,18 +22,23 @@ const FrequentlyAskedQuestions = ({data}) => {
           </h2>
         </div>
         <div className="box-shadow">
-          {data.map(accordion => (
-            <Accordion className="rounder-[20px]">
+          {data.map((accordion) => (
+            <Accordion>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
-                className="max-[600px]:px-[20px] px-[60px] py-[20px]"
+                // className="max-[600px]:px-[20px] px-[60px] py-[20px]"
+                sx={AccordionSummaryStyles}
               >
-                <Typography className="font-semibold text-[18px] leading-[20px]">{accordion.question}</Typography>
+                <Typography className="font-semibold text-[18px] leading-[20px]">
+                  {accordion.question}
+                </Typography>
               </AccordionSummary>
               <AccordionDetails className="px-[60px]">
-                <Typography className="font-[300] text-[rgba(0,0,0,.741)] text-[16px] leading-[18px]">{accordion.answer}</Typography>
+                <Typography className="font-[300] text-[rgba(0,0,0,.741)] text-[16px] leading-[18px]">
+                  {accordion.answer}
+                </Typography>
               </AccordionDetails>
             </Accordion>
           ))}
