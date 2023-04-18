@@ -7,7 +7,6 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 
 const AccordionSummaryStyles = {
-    color: "red",
     padding: "20px",
     marginLeft: "20px",
     marginRight: "20px",
@@ -15,7 +14,7 @@ const AccordionSummaryStyles = {
 }
 
 const AccordionSummaryTypo = {
-    fontWeight: 500,
+    fontWeight: 700,
     fontSize: "18px"
 }
 
