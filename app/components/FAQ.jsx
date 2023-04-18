@@ -14,8 +14,14 @@ const AccordionSummaryStyles = {
 }
 
 const AccordionSummaryTypo = {
-    fontWeight: 700,
+    fontWeight: 500,
     fontSize: "18px"
+}
+
+const AccordionDetailsTypo = {
+    fontWeight: 300,
+    fontSize: "16px",
+    color: "rgba(0,0,0,.741)"
 }
 
 const FrequentlyAskedQuestions = ({ data }) => {
@@ -37,14 +43,17 @@ const FrequentlyAskedQuestions = ({ data }) => {
                 // className="max-[600px]:px-[20px] px-[60px] py-[20px]"
                 sx={AccordionSummaryStyles}
               >
-                <Typography className="font-semibold text-[18px] leading-[20px]">
+                <Typography 
+                // className="font-semibold text-[18px] leading-[20px]"
+                sx={AccordionSummaryTypo}
+                >
                   {accordion.question}
                 </Typography>
               </AccordionSummary>
               <AccordionDetails className="px-[60px]">
                 <Typography 
                 // className="font-[300] text-[rgba(0,0,0,.741)] text-[16px] leading-[18px]"
-                sx={AccordionSummaryTypo}
+                sx={AccordionDetailsTypo}
                 >
                   {accordion.answer}
                 </Typography>
