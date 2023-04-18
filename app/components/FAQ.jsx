@@ -8,8 +8,15 @@ import Typography from "@mui/material/Typography";
 
 const AccordionSummaryStyles = {
     color: "red",
-    padding: "30px 20px",
+    padding: "20px",
+    marginLeft: "20px",
+    marginRight: "20px",
     fontFamily: "DM sans, sans-serif"
+}
+
+const AccordionSummaryTypo = {
+    fontWeight: 500,
+    fontSize: "18px"
 }
 
 const FrequentlyAskedQuestions = ({ data }) => {
@@ -36,7 +43,10 @@ const FrequentlyAskedQuestions = ({ data }) => {
                 </Typography>
               </AccordionSummary>
               <AccordionDetails className="px-[60px]">
-                <Typography className="font-[300] text-[rgba(0,0,0,.741)] text-[16px] leading-[18px]">
+                <Typography 
+                // className="font-[300] text-[rgba(0,0,0,.741)] text-[16px] leading-[18px]"
+                sx={AccordionSummaryTypo}
+                >
                   {accordion.answer}
                 </Typography>
               </AccordionDetails>
