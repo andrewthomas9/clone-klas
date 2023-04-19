@@ -5,28 +5,31 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const AccordionSummaryStyles = {
-    padding: "15px",
-    marginLeft: "20px",
-    marginRight: "20px",
-    fontFamily: "DM sans, sans-serif"
-}
+  padding: "15px",
+  marginLeft: "10px",
+  marginRight: "10px",
+  fontFamily: "DM sans, sans-serif",
+};
 
 const AccordionSummaryTypo = {
-    fontWeight: 700,
-    fontSize: "18px"
-}
+  fontWeight: 700,
+  fontSize: "18px",
+};
 
 const AccordionDetailsTypo = {
-    fontWeight: 300,
-    fontSize: "16px",
-    color: "rgba(0,0,0,.741)",
-    paddingLeft: "15px",
-    paddingRight: "15px",
-}
+  fontWeight: 300,
+  fontSize: "16px",
+  color: "rgba(0,0,0,.741)",
+  paddingLeft: "15px",
+  paddingRight: "15px",
+};
 
 const FrequentlyAskedQuestions = ({ data }) => {
+
+  const matches = useMediaQuery("(max-width:500px)");
   return (
     <section className="py-[80px]">
       <div className="container">
@@ -44,16 +47,14 @@ const FrequentlyAskedQuestions = ({ data }) => {
                 id="panel1a-header"
                 sx={AccordionSummaryStyles}
               >
-                <Typography 
-                sx={AccordionSummaryTypo}
-                >
+                <Typography sx={AccordionSummaryTypo}>
                   {accordion.question}
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography 
-                // className="font-[300] text-[rgba(0,0,0,.741)] text-[16px] leading-[18px]"
-                sx={AccordionDetailsTypo}
+                <Typography
+                  // className="font-[300] text-[rgba(0,0,0,.741)] text-[16px] leading-[18px]"
+                  sx={AccordionDetailsTypo}
                 >
                   {accordion.answer}
                 </Typography>
