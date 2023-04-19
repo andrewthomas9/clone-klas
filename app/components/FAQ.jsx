@@ -14,7 +14,7 @@ const AccordionSummaryStyles = {
 }
 
 const AccordionSummaryTypo = {
-    fontWeight: 500,
+    fontWeight: 700,
     fontSize: "18px"
 }
 
