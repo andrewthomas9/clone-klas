@@ -6,7 +6,6 @@ import CountUp from "react-countup";
 import FrequentlyAskedQuestions from "../components/FAQ";
 import { CompanyFaqData } from "@/data/Data";
 
-
 const CompanyPage = () => {
   return (
     <main>
@@ -20,13 +19,13 @@ const CompanyPage = () => {
         <div>
           <div className="grid place-items-center max-[768px]:h-[300px] max-[768px]:w-full overflow-hidden mx-auto min-[768px]:w-[1250px]-hidden relative">
             <div className="flex max-[768px]:grid max-[768px]:place-items-center max-[768px]:absolute max-[768px]:gap-[10px] max-[768px]:w-[630px] max-[768px]:grid-cols-3 items-center justify-between mx-auto w-[1250px]">
-              <div className="max-[768px]:w-[200px]">
+              <div className="max-[768px]:w-[200px] overflow-hidden rounded-[12px] scale-image">
                 <img src="images/companypage/d1.svg" alt="metrics images" />
               </div>
-              <div className="max-[768px]:w-[200px]">
+              <div className="max-[768px]:w-[200px] overflow-hidden rounded-[12px] scale-image">
                 <img src="images/companypage/d2.svg" alt="metrics images" />
               </div>
-              <div className="max-[768px]:w-[200px]">
+              <div className="max-[768px]:w-[200px] overflow-hidden rounded-[12px] scale-image">
                 <img src="images/companypage/d3.svg" alt="metrics images" />
               </div>
             </div>
@@ -76,27 +75,65 @@ const CompanyPage = () => {
             </h2>
           </div>
           <div className="flex items-center justify-center gap-[25px] flex-wrap">
-            <div class="styles_c_i__RjaRB">
+            <div className="overflow-hidden rounded-[12px] scale-image">
               <img src="images/companypage/c1.svg" alt="culture @ klas" />
-              <p className="mt-[20px] font-semibold text-[24px] leading-[26px]">Fun</p>
+              <p className="mt-[20px] font-semibold text-[24px] leading-[26px]">
+                Fun
+              </p>
             </div>
-            <div class="styles_c_i__RjaRB">
+            <div className="overflow-hidden rounded-[12px] scale-image">
               <img src="images/companypage/c2.svg" alt="culture @ klas" />
-              <p className="mt-[20px] font-semibold text-[24px] leading-[26px]">Collaborative</p>
+              <p className="mt-[20px] font-semibold text-[24px] leading-[26px]">
+                Collaborative
+              </p>
             </div>
-            <div class="styles_c_i__RjaRB">
+            <div className="overflow-hidden rounded-[12px] scale-image">
               <img src="images/companypage/c3.svg" alt="culture @ klas" />
-              <p className="mt-[20px] font-semibold text-[24px] leading-[26px]">Borderless</p>
+              <p className="mt-[20px] font-semibold text-[24px] leading-[26px]">
+                Borderless
+              </p>
             </div>
-            <div class="styles_c_i__RjaRB">
+            <div className="overflow-hidden rounded-[12px] scale-image">
               <img src="images/companypage/c4.svg" alt="culture @ klas" />
-              <p className="mt-[20px] font-semibold text-[24px] leading-[26px]">Community-driven</p>
+              <p className="mt-[20px] font-semibold text-[24px] leading-[26px]">
+                Community-driven
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <FrequentlyAskedQuestions data={CompanyFaqData}/>
+      <FrequentlyAskedQuestions data={CompanyFaqData} />
+
+      <section className="pt-[50px] pb-[160px]">
+        <div className="max-w-[1366px] px-[40px] mx-auto ">
+          <div className="flex flex-col items-center justify-center text-center">
+            <h2 className="font-bold text-center text-[48px] leading-[53px] mb-[80px] max-md:text-[32px] max-md:leading-[38px]">
+              As featured in
+            </h2>
+            <div className="flex items-center justify-center flex-wrap gap-[80px]">
+              <div>
+                <img src="images/companypage/techcabal.svg" alt="TechCabal" />
+              </div>
+              <div>
+                <img
+                  src="images/companypage/nairametrics.svg"
+                  alt="NairaMetrics"
+                />
+              </div>
+              <div>
+                <img src="images/companypage/edtech.svg" alt="EdTech Review" />
+              </div>
+              <div>
+                <img src="images/companypage/disrupt.svg" alt="disrupt" />
+              </div>
+              <div>
+                <img src="images/companypage/db.svg" alt="DB" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };

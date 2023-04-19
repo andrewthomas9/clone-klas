@@ -92,3 +92,9 @@ body {
 .pricing-list li {
   @apply flex text-left font-normal text-base leading-[18px] items-start justify-start mb-[22px] gap-[18px]
 }
+
+.scale-image:hover img {
+  transform: scale(1.05);
+  transition: all .8s ease-in;
+  cursor: pointer;
+}
