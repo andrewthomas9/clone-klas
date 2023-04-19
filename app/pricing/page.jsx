@@ -3,21 +3,14 @@ import CallToAction from "../components/CTA";
 import Link from "next/link";
 import FrequentlyAskedQuestions from "../components/FAQ";
 import { PricingFaqData } from "@/data/Data";
+import PageHeaders from "../components/PageHeaders";
 
 const PricingPage = () => {
   return (
     <main>
-      <section className="gradient mb-[80px]">
-        <div className="container">
-          <header className="md:pt-[210px] md:pb-[120px] pt-[170px] pb-[80px]">
-            <div className="flex items-center justify-center md:text-[56px] md:leading-[73px] font-bold text-white text-[30px] leading-[42px] text-center">
-              Set up your virtual academy today
-            </div>
-          </header>
-        </div>
-      </section>
+      <PageHeaders text="Set up your virtual academy today" gradient/>
 
-      <section className="py-[80px] w-full h-fit">
+      <section className="py-[80px]  mt-[80px] w-full h-fit">
         <div className="container">
           <div className="grid items-center gap-[50px] lg-1150:gap-[80px] justify-center grid-cols-1 tab:grid-cols-5">
             <div className="min-[500px]:w-[386px] max-[500px]:w-full flex items-center justify-center flex-col row-[1] col-[1] justify-self-center tab:row-[2] lg-1150:row-[1] tab:col-[1/4] lg-1150:col-[1/3] tab:justify-self-start lg-1150:justify-self-end h-[950px] rounded-3xl box-shadow bg-[rgba(17,39,227,.08)]">
