@@ -1,6 +1,8 @@
+"use client";
+
 import React from "react";
 import PageHeaders from "../components/PageHeaders";
-import CountUp from "react-countup/build/CountUp";
+import CountUp from "react-countup";
 
 const CompanyPage = () => {
   return (
@@ -26,11 +28,33 @@ const CompanyPage = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center max-md:flex-wrap max-md:px-[20px] max-md:py-[40px] px-[40px] py-[80px] justify-between max-w-[950px]">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+          <div className="flex items-center justify-center mx-auto max-md:flex-wrap max-md:px-[20px] justify-between max-md:py-[40px] px-[40px] py-[80px] max-w-[950px]">
+            <div className="flex flex-col max-md:mx-auto max-md:mb-[40px] items-center">
+              <h3 className="font-semibold text-[32px] leading-[35px] text-center">
+                2022
+              </h3>
+              <p className="text-base leading-[18px text-center font-[300] mt-[15px]">Launched in year</p>
+            </div>
+            <div className="flex flex-col max-md:mx-auto max-md:mb-[40px] items-center">
+              <h3 className="font-semibold text-[32px] leading-[35px] text-center">
+                <CountUp end={85000} duration={2} enableScrollSpy={true} />
+                +
+              </h3>
+              <p className="text-base leading-[18px text-center font-[300] mt-[15px]">Learners worldwide</p>
+            </div>
+            <div className="flex flex-col max-md:mx-auto max-md:mb-[40px] items-center">
+              <h3 className="font-semibold text-[32px] leading-[35px] text-center">
+                <CountUp end={1200} duration={2} enableScrollSpy={true} />
+                +
+              </h3>
+              <p className="text-base leading-[18px text-center font-[300] mt-[15px]">Active online schools</p>
+            </div>
+            <div className="flex flex-col max-md:mx-auto max-md:mb-[40px] items-center">
+              <h3 className="font-semibold text-[32px] leading-[35px] text-center">
+                <CountUp end={27} duration={2} enableScrollSpy={true} />
+              </h3>
+              <p className="text-base leading-[18px text-center font-[300] mt-[15px]">Countriess reached</p>
+            </div>
           </div>
         </div>
       </section>
