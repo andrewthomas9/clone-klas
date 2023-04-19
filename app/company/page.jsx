@@ -3,6 +3,9 @@
 import React from "react";
 import PageHeaders from "../components/PageHeaders";
 import CountUp from "react-countup";
+import FrequentlyAskedQuestions from "../components/FAQ";
+import { CompanyFaqData } from "@/data/Data";
+
 
 const CompanyPage = () => {
   return (
@@ -33,35 +36,67 @@ const CompanyPage = () => {
               <h3 className="font-semibold text-[32px] leading-[35px] text-center">
                 2022
               </h3>
-              <p className="text-base leading-[18px text-center font-[300] mt-[15px]">Launched in year</p>
+              <p className="text-base leading-[18px text-center font-[300] mt-[15px]">
+                Launched in year
+              </p>
             </div>
             <div className="flex flex-col max-md:mx-auto max-md:mb-[40px] items-center">
               <h3 className="font-semibold text-[32px] leading-[35px] text-center">
-                <CountUp end={85000} duration={2} enableScrollSpy={true} />
-                +
+                <CountUp end={85000} duration={2} enableScrollSpy={true} />+
               </h3>
-              <p className="text-base leading-[18px text-center font-[300] mt-[15px]">Learners worldwide</p>
+              <p className="text-base leading-[18px text-center font-[300] mt-[15px]">
+                Learners worldwide
+              </p>
             </div>
             <div className="flex flex-col max-md:mx-auto max-md:mb-[40px] items-center">
               <h3 className="font-semibold text-[32px] leading-[35px] text-center">
-                <CountUp end={1200} duration={2} enableScrollSpy={true} />
-                +
+                <CountUp end={1200} duration={2} enableScrollSpy={true} />+
               </h3>
-              <p className="text-base leading-[18px text-center font-[300] mt-[15px]">Active online schools</p>
+              <p className="text-base leading-[18px text-center font-[300] mt-[15px]">
+                Active online schools
+              </p>
             </div>
             <div className="flex flex-col max-md:mx-auto max-md:mb-[40px] items-center">
               <h3 className="font-semibold text-[32px] leading-[35px] text-center">
                 <CountUp end={27} duration={2} enableScrollSpy={true} />
               </h3>
-              <p className="text-base leading-[18px text-center font-[300] mt-[15px]">Countriess reached</p>
+              <p className="text-base leading-[18px text-center font-[300] mt-[15px]">
+                Countriess reached
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="pt-[80px]">
-        <div>hello</div>
+      <section className="pt-[80px] pb-[130px]">
+        <div className="flex flex-col items-center justify-center px-[40px] max-md:px-[20px]">
+          <div className="max-w-[825px] text-center max-md:mb-[40px] mb-[80px]">
+            <h2 className="font-semibold text-[48px] leading-[53px] text-center max-md:text-[32px] max-md:leading-[35px]">
+              We look forward to a future where learning is even more
+            </h2>
+          </div>
+          <div className="flex items-center justify-center gap-[25px] flex-wrap">
+            <div class="styles_c_i__RjaRB">
+              <img src="images/companypage/c1.svg" alt="culture @ klas" />
+              <p className="mt-[20px] font-semibold text-[24px] leading-[26px]">Fun</p>
+            </div>
+            <div class="styles_c_i__RjaRB">
+              <img src="images/companypage/c2.svg" alt="culture @ klas" />
+              <p className="mt-[20px] font-semibold text-[24px] leading-[26px]">Collaborative</p>
+            </div>
+            <div class="styles_c_i__RjaRB">
+              <img src="images/companypage/c3.svg" alt="culture @ klas" />
+              <p className="mt-[20px] font-semibold text-[24px] leading-[26px]">Borderless</p>
+            </div>
+            <div class="styles_c_i__RjaRB">
+              <img src="images/companypage/c4.svg" alt="culture @ klas" />
+              <p className="mt-[20px] font-semibold text-[24px] leading-[26px]">Community-driven</p>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <FrequentlyAskedQuestions data={CompanyFaqData}/>
     </main>
   );
 };

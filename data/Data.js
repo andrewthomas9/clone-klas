@@ -399,9 +399,48 @@ export const PricingFaqData = [
       "Not yet, but we have that in our 2023 roadmap to launch Klas for Nonprofits. So you can look out for that. ",
   },
   {
-    id: 1,
+    id: 6,
     question: "How can I receive payouts from my classes?",
     answer:
       "We offer instant payouts to our creators. So the moment you start receiving bookings to a class, we pay out the earnings in less than 30 mins.",
+  },
+];
+
+export const CompanyFaqData = [
+  {
+    id: 1,
+    question: "Who can use Klas?",
+    answer:
+      "Everyone can use Klas. Including creators, online schools,communities, and even brands.",
+  },
+  {
+    id: 2,
+    question: "What if I want to host a paid class?",
+    answer:
+      "Currently, you can only host a paid class in 2 currencies: USD and NGN. We will be supporting more currencies in 2023.",
+  },
+  {
+    id: 3,
+    question: "How much does it cost to use Klas?",
+    answer:
+      "It's completely free to use. You can opt for our paid plans: Klas Pro or Klas Enterprise. Check out our pricing page.",
+  },
+  {
+    id: 4,
+    question: "How is Klas different from Zoom and Gmeet?",
+    answer:
+      "Zoom and Gmeet are video conferencing tools, but Klas is more than just a virtual classroom tech. You can accept payments fromstudents globally, manage your classes, offer online tests, and connect your favourite tools from our integration store. Klas takes a more all-in-one approach to online teaching, while still remaining simple and intuitive for everyone.",
+  },
+  {
+    id: 5,
+    question: "How is Klas different from Udemy or Skillshare?",
+    answer:
+      "Udemy and Skillshare are marketplaces focused on pre-recorded courses. Klas is a shopify-like platform that lets you create, monetize, and host engaging live classes.",
+  },
+  {
+    id: 6,
+    question: "Can I record my classes?",
+    answer:
+      "Yes you can record your classes on Klas. Once your class ends, you can then either download the class recording immediately or if the file is too big, you can auto-upload the class recording to YouTube.",
   },
 ];
