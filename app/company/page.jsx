@@ -75,26 +75,34 @@ const CompanyPage = () => {
             </h2>
           </div>
           <div className="flex items-center justify-center gap-[25px] flex-wrap">
-            <div className="overflow-hidden rounded-[12px] scale-image">
-              <img src="images/companypage/c1.svg" alt="culture @ klas" />
+            <div>
+              <div className="overflow-hidden rounded-[12px] scale-image">
+                <img src="images/companypage/c1.svg" alt="culture @ klas" />
+              </div>
               <p className="mt-[20px] font-semibold text-[24px] leading-[26px]">
                 Fun
               </p>
             </div>
-            <div className="overflow-hidden rounded-[12px] scale-image">
-              <img src="images/companypage/c2.svg" alt="culture @ klas" />
+            <div>
+              <div className="overflow-hidden rounded-[12px] scale-image">
+                <img src="images/companypage/c2.svg" alt="culture @ klas" />
+              </div>
               <p className="mt-[20px] font-semibold text-[24px] leading-[26px]">
                 Collaborative
               </p>
             </div>
-            <div className="overflow-hidden rounded-[12px] scale-image">
-              <img src="images/companypage/c3.svg" alt="culture @ klas" />
+            <div>
+              <div className="overflow-hidden rounded-[12px] scale-image">
+                <img src="images/companypage/c3.svg" alt="culture @ klas" />
+              </div>
               <p className="mt-[20px] font-semibold text-[24px] leading-[26px]">
                 Borderless
               </p>
             </div>
-            <div className="overflow-hidden rounded-[12px] scale-image">
-              <img src="images/companypage/c4.svg" alt="culture @ klas" />
+            <div>
+              <div className="overflow-hidden rounded-[12px] scale-image">
+                <img src="images/companypage/c4.svg" alt="culture @ klas" />
+              </div>
               <p className="mt-[20px] font-semibold text-[24px] leading-[26px]">
                 Community-driven
               </p>
