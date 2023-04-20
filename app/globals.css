@@ -102,3 +102,7 @@ body {
   transition: all .8s ease-in;
   cursor: pointer;
 }
+
+.case-study-card {
+  -webkit-filter: drop-shadow(0 4px 25px rgba(0,0,0,.1))!important
+}
