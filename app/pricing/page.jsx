@@ -8,7 +8,7 @@ import PageHeaders from "../components/PageHeaders";
 const PricingPage = () => {
   return (
     <main>
-      <PageHeaders text="Set up your virtual academy today" gradient/>
+      <PageHeaders pt={true} pb={true} text="Set up your virtual academy today" gradient/>
 
       <section className="py-[80px]  mt-[80px] w-full h-fit">
         <div className="container">
