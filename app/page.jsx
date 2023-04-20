@@ -134,7 +134,6 @@ const HomePage = () => {
               <div className="grid">
                 <div className="overflow-hidden 2xl:w-[2000px] 2xl:mx-auto">
                   <Marquee
-                    pauseOnHover
                     speed={45}
                     className="flex gap-6"
                     gradient={false}
