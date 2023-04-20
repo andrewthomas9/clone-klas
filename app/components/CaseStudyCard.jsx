@@ -3,7 +3,7 @@ import React from "react";
 const CaseStudyCard = ({ data }) => {
   return (
     <div className="bg-white rounded-[24px] case-study-card overflow-hidden flex flex-col pb-[24px]">
-      <div className="relative">
+      <div className="relative scale-image overflow-hidden">
         <img className="object-fit" src={data.imageSrc} alt={data.companyName} />
         <div className="absolute top-0 left-0 grid place-items-center bg-[rgba(0,0,0,.5)] w-full h-full">
           <img src={data.overlayImg} alt={data.companyName} />
