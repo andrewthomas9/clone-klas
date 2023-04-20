@@ -10,6 +10,8 @@ const CompanyPage = () => {
   return (
     <main>
       <PageHeaders
+        sm={true}
+        pb={true}
         textColor="black"
         paragraph="Launched in 2022, Klas is on a mission to empower everyone to teach engaging online classes."
         text="Empowering everyone to teach online"
