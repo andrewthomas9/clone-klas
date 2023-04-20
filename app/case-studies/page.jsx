@@ -36,7 +36,7 @@ const CaseStudiesPage = () => {
       </section>
 
       <section className="py-[120px] max-md:py-[80px]">
-        <div className="grid max-[600px]:grid-cols-1 min-[600px]:grid-cols-2 min-[1000px]:grid-cols-3 max-md:px-[20px] px-[40px] max-w-[1300px] gap-[40px]">
+        <div className="grid max-[600px]:grid-cols-1 mx-auto min-[600px]:grid-cols-2 min-[1000px]:grid-cols-3 max-md:px-[20px] px-[40px] max-w-[1300px] gap-[40px]">
           {CaseStudiesData.map((data) => (
             <CaseStudyCard data={data} />
           ))}
