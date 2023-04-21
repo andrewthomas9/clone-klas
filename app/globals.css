@@ -106,3 +106,11 @@ body {
 .case-study-card {
   -webkit-filter: drop-shadow(0 4px 25px rgba(0,0,0,.1))!important
 }
+
+.pre-buillt-features-container {
+  /* @apply grid-cols-6 grid gap-[20px] */
+  display: grid;
+  content: "";
+  grid-template-columns: 6, 1fr;
+  grid-auto-rows: 144px;
+}

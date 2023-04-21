@@ -528,3 +528,30 @@ export const ProductsCardData = [
     img: "images/productspage/training.png",
   },
 ];
+
+export const PreBuiltFeatures = [
+  {
+    name: "Record class",
+    img: "images/productspage/record.svg"
+  },
+  {
+    name: "Kick out students",
+    img: "images/productspage/kick-out.svg"
+  },
+  {
+    name: "Screenshare",
+    img: "images/productspage/screenshare.svg"
+  },
+  {
+    name: "HD video & audio",
+    img: "images/productspage/hd.svg"
+  },
+  {
+    name: "In-built chat",
+    img: "images/productspage/chat.svg"
+  },
+  {
+    name: "Mute students",
+    img: "images/productspage/mute.svg"
+  },
+]

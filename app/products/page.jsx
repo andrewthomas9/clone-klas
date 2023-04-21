@@ -2,6 +2,7 @@ import React from "react";
 import PageHeaders from "../components/PageHeaders";
 import Link from "next/link";
 import { ProductsCardData } from "@/data/Data";
+import { PreBuiltFeatures } from "@/data/Data";
 
 const ProductsPage = () => {
   return (
@@ -100,7 +101,32 @@ const ProductsPage = () => {
             {ProductsCardData.map(({ name, img }) => (
               <div className="relative grid place-items-center">
                 <img src={img} alt={name} />
-                <h3 className="md:text-[24px] leading-[21px] text-base bottom-[10px] absolute text-center  min-[700px]bottom-[20px] text-white font-semibold">{name}</h3>
+                <h3 className="md:text-[24px] leading-[21px] text-base bottom-[10px] absolute text-center  min-[700px]bottom-[20px] text-white font-semibold">
+                  {name}
+                </h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mb-[80px] md:mb-[160px]">
+        <div className="flex flex-col gap-[80px] items-center justify-center">
+          <div className="flex flex-col items-center justify-center text-black text-[30px] leading-[42px] text-center">
+            <h2 className="max-md:text-[32px] max-md:leading-[42px] max-md:mb-[16px] mb-[15px] md:text-[48px] leading-[62px] md:leading-[73px] font-bold">
+              Pre-built features to supercharge the experience
+            </h2>
+            <p className="max-md:text-[18px] max-md:leading-[22px] text-[24px] leading-[31px] text-center font-[400] text-[rgba(0,0,0,.5)] max-w-[1000px]">
+              Our SDK provides a solid video foundation, but your product needs
+              a bit more to shine. We've got you covered.
+            </p>
+          </div>
+
+          <div className="flex gap-[20px] items-center justify-center flex-wrap">
+            {PreBuiltFeatures.map(({ name, img }) => (
+              <div className="flex w-[181px] max-[620px]:w-[150px] h-[150px] flex-col items-center justify-center gap-[16px] rounded-[12px] box-shadow-two bg-white" key={name}>
+                <img src={img} alt={name} />
+                <p className="font-[500] text-[14px] leading-[18px] text-center">{name}</p>
               </div>
             ))}
           </div>
