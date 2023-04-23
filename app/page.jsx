@@ -133,11 +133,7 @@ const HomePage = () => {
               </h1>
               <div className="grid">
                 <div className="overflow-hidden 2xl:w-[2000px] 2xl:mx-auto">
-                  <Marquee
-                    speed={45}
-                    className="flex gap-6"
-                    gradient={false}
-                  >
+                  <Marquee speed={45} className="flex gap-6" gradient={false}>
                     <span className="grid grid-cols-4 tab-800:grid-cols-6 gap-4 tab-800:gap-6 mr-3 ">
                       {marqueeData.map(({ text, url }) => (
                         <div
@@ -288,7 +284,7 @@ const HomePage = () => {
           </div>
         </section>
 
-        <CallToAction />
+        <CallToAction text="Sign up free"/>
       </main>
     </>
   );

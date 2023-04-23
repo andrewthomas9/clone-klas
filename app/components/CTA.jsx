@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-const CallToAction = () => {
+const CallToAction = ({ text }) => {
   return (
     <section className="container mb-[160px]">
           <div>
@@ -15,7 +15,7 @@ const CallToAction = () => {
                 </p>
               </div>
               <Link className="md:text-[20px] font-medium rounded-3xl py-[14px] px-[28px] text-purple-100 md:leading-[28px] md:py-[16px] md:px-[50px] bg-white" href="/signup">
-                Sign up free
+                {text}
               </Link>
             </div>
           </div>

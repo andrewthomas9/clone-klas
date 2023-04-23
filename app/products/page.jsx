@@ -3,6 +3,7 @@ import PageHeaders from "../components/PageHeaders";
 import Link from "next/link";
 import { ProductsCardData } from "@/data/Data";
 import { PreBuiltFeatures } from "@/data/Data";
+import CallToAction from "../components/CTA";
 
 const ProductsPage = () => {
   return (
@@ -132,6 +133,8 @@ const ProductsPage = () => {
           </div>
         </div>
       </section>
+
+      <CallToAction text="View docs" />
     </main>
   );
 };
