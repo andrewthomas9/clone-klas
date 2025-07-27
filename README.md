@@ -1,4 +1,3 @@
-![header image](https://github.com/OgaDavid/klas/blob/main/screenshots/klas-logo.jpg?raw=true)
 
 # [Klas](klas-clone.vercel.app) - Free Online Teaching Platform. 🚀
 
